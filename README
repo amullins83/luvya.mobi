@@ -1,0 +1,5 @@
+The plan for this project is:
+
+Build objects for users, text messages, and message lists
+Build a sweet-looking (or at least passable) user interface
+Connect to a web-based PHP/MySQL back-end at luvya.mobi (domain not yet purchased).
