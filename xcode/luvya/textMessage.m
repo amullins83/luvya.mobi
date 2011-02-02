@@ -11,14 +11,22 @@
 
 @implementation textMessage
 
-- (void)initWithID:(long int)txtId numUses:(int)uses lastUsed:(NSDate *)last firstUsed:(NSDate *)first (NSString *)msg {
++ (void)initWithID:(long int)txtId numUses:(long int)uses lastUsed:(NSDate *)last firstUsed:(NSDate *)first (NSString *)msg {
 	[super init];
-	self.TextID = txtId;
-	self.Uses = numUses;
-	self.LastUsed = last;
-	self.FirstUsed = first;
-	self.Text = msg;
+	TextID = txtId;
+	Uses = numUses;
+	LastUsed = [[[NSDate alloc] initWithTimeInterval:0 sinceDate:last retain];
+	FirstUsed = [[[NSDate alloc] initWithTimeInterval:0 sinceDate:first] retain];
+	Text = [[[NSString alloc] initWithString:msg] retain];
+	
+	
 }
 
-
++ (void) dealloc: {
+	[LastUsed dealloc];
+	[FirstUsed dealloc];
+	[Text dealloc];
+	[super dealloc];
+  }
+				
 @end

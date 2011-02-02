@@ -3,8 +3,15 @@
 	1D3623240D0F684500981E51 /* luvyaAppDelegate.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {625, 394}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 473}";
+			sepNavSelRange = "{104, 0}";
+			sepNavVisRange = "{0, 461}";
+		};
+	};
+	1D3623250D0F684500981E51 /* luvyaAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1965, 1157}}";
+			sepNavSelRange = "{281, 14}";
+			sepNavVisRange = "{1953, 753}";
 		};
 	};
 	1D6058900D05DD3D006BFB54 /* luvya */ = {
@@ -29,6 +36,7 @@
 		dataTipSortType = 0;
 		debuggerPlugin = GDBDebugging;
 		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
 		enableDebugStr = 1;
 		environmentEntries = (
 		);
@@ -53,6 +61,88 @@
 	273E75DD12F8EBEC00E19B57 /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
+	};
+	273E75F012F98F9E00E19B57 /* LYTextMessage.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {625, 394}}";
+			sepNavSelRange = "{353, 0}";
+			sepNavVisRange = "{0, 509}";
+			sepNavWindowFrame = "{{15, 315}, {750, 558}}";
+		};
+	};
+	273E75F112F98F9E00E19B57 /* LYTextMessage.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {866, 767}}";
+			sepNavSelRange = "{1387, 0}";
+			sepNavVisRange = "{0, 732}";
+			sepNavWindowFrame = "{{38, 294}, {750, 558}}";
+		};
+	};
+	273E761512F9DCFB00E19B57 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Expected '{' before '(' token";
+		fRef = 273E75F112F98F9E00E19B57 /* LYTextMessage.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 22;
+		rType = 1;
+	};
+	273E761612F9DCFB00E19B57 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 273E75F112F98F9E00E19B57 /* LYTextMessage.m */;
+		name = "LYTextMessage.m: 22";
+		rLen = 0;
+		rLoc = 348;
+		rType = 0;
+		vrLen = 478;
+		vrLoc = 219;
+	};
+	273E762112F9DD5900E19B57 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Expected identifier before '{' token";
+		fRef = 273E75F112F98F9E00E19B57 /* LYTextMessage.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 50;
+		rType = 1;
+	};
+	273E762212F9DD5900E19B57 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 273E75F112F98F9E00E19B57 /* LYTextMessage.m */;
+		name = "LYTextMessage.m: 50";
+		rLen = 0;
+		rLoc = 1277;
+		rType = 0;
+		vrLen = 391;
+		vrLoc = 962;
+	};
+	273E762D12F9E02E00E19B57 /* LYTextTableCell.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {625, 394}}";
+			sepNavSelRange = "{203, 0}";
+			sepNavVisRange = "{0, 212}";
+		};
+	};
+	273E762E12F9E02E00E19B57 /* LYTextTableCell.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {663, 494}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{79, 580}";
+		};
+	};
+	289233A80DB2D0DB0083E9F9 /* MainViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {625, 394}}";
+			sepNavSelRange = "{418, 0}";
+			sepNavVisRange = "{0, 495}";
+		};
+	};
+	289233A90DB2D0DB0083E9F9 /* MainViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {866, 1079}}";
+			sepNavSelRange = "{1520, 0}";
+			sepNavVisRange = "{575, 970}";
+		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
@@ -115,8 +205,21 @@
 			PBXPerProjectTemplateStateSaveDate = 318303180;
 			PBXWorkspaceStateSaveDate = 318303180;
 		};
+		perUserProjectItems = {
+			273E761512F9DCFB00E19B57 /* XCBuildMessageTextBookmark */ = 273E761512F9DCFB00E19B57 /* XCBuildMessageTextBookmark */;
+			273E761612F9DCFB00E19B57 /* PBXTextBookmark */ = 273E761612F9DCFB00E19B57 /* PBXTextBookmark */;
+			273E762112F9DD5900E19B57 /* XCBuildMessageTextBookmark */ = 273E762112F9DD5900E19B57 /* XCBuildMessageTextBookmark */;
+			273E762212F9DD5900E19B57 /* PBXTextBookmark */ = 273E762212F9DD5900E19B57 /* PBXTextBookmark */;
+		};
 		sourceControlManager = 273E75DC12F8EBEC00E19B57 /* Source Control */;
 		userBuildSettings = {
+		};
+	};
+	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {625, 394}}";
+			sepNavSelRange = "{92, 0}";
+			sepNavVisRange = "{0, 348}";
 		};
 	};
 }

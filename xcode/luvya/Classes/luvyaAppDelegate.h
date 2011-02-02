@@ -3,7 +3,7 @@
 //  luvya
 //
 //  Created by Austin Mullins on 2/1/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 LuvYa. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

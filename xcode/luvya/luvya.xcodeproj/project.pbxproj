@@ -11,7 +11,10 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		273E75F212F98F9E00E19B57 /* textMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 273E75F112F98F9E00E19B57 /* textMessage.m */; };
+		273E75F212F98F9E00E19B57 /* LYTextMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 273E75F112F98F9E00E19B57 /* LYTextMessage.m */; };
+		273E762F12F9E02E00E19B57 /* LYTextTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 273E762E12F9E02E00E19B57 /* LYTextTableCell.m */; };
+		273E768612F9E97400E19B57 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 273E768512F9E97400E19B57 /* MessageUI.framework */; };
+		273E769212F9EEB800E19B57 /* TextDB.plist in Resources */ = {isa = PBXBuildFile; fileRef = 273E769112F9EEB800E19B57 /* TextDB.plist */; };
 		280E754D0DD40C5E005A515E /* FlipsideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754A0DD40C5E005A515E /* FlipsideView.xib */; };
 		280E754E0DD40C5E005A515E /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754B0DD40C5E005A515E /* MainView.xib */; };
 		280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754C0DD40C5E005A515E /* MainWindow.xib */; };
@@ -26,8 +29,12 @@
 		1D3623250D0F684500981E51 /* luvyaAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = luvyaAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* luvya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = luvya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		273E75F012F98F9E00E19B57 /* textMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = textMessage.h; sourceTree = "<group>"; };
-		273E75F112F98F9E00E19B57 /* textMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = textMessage.m; sourceTree = "<group>"; };
+		273E75F012F98F9E00E19B57 /* LYTextMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYTextMessage.h; sourceTree = "<group>"; };
+		273E75F112F98F9E00E19B57 /* LYTextMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYTextMessage.m; sourceTree = "<group>"; };
+		273E762D12F9E02E00E19B57 /* LYTextTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYTextTableCell.h; sourceTree = "<group>"; };
+		273E762E12F9E02E00E19B57 /* LYTextTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYTextTableCell.m; sourceTree = "<group>"; };
+		273E768512F9E97400E19B57 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		273E769112F9EEB800E19B57 /* TextDB.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TextDB.plist; sourceTree = "<group>"; };
 		280E754A0DD40C5E005A515E /* FlipsideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlipsideView.xib; sourceTree = "<group>"; };
 		280E754B0DD40C5E005A515E /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		280E754C0DD40C5E005A515E /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
@@ -49,6 +56,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */,
+				273E768612F9E97400E19B57 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +102,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				273E75F012F98F9E00E19B57 /* textMessage.h */,
-				273E75F112F98F9E00E19B57 /* textMessage.m */,
+				273E75F012F98F9E00E19B57 /* LYTextMessage.h */,
+				273E75F112F98F9E00E19B57 /* LYTextMessage.m */,
 				289233A00DB2D0730083E9F9 /* Main View */,
 				281C6CD70DB2D82200F60ACC /* Flipside View */,
 				080E96DDFE201D6D7F000001 /* Application Delegate */,
@@ -103,6 +111,8 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				273E762D12F9E02E00E19B57 /* LYTextTableCell.h */,
+				273E762E12F9E02E00E19B57 /* LYTextTableCell.m */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -123,6 +133,7 @@
 				280E754B0DD40C5E005A515E /* MainView.xib */,
 				280E754C0DD40C5E005A515E /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* luvya-Info.plist */,
+				273E769112F9EEB800E19B57 /* TextDB.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -133,6 +144,7 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765580DF743DE002DB57D /* CoreGraphics.framework */,
+				273E768512F9E97400E19B57 /* MessageUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,6 +174,9 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = LuvYa;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "luvya" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -190,6 +205,7 @@
 				280E754D0DD40C5E005A515E /* FlipsideView.xib in Resources */,
 				280E754E0DD40C5E005A515E /* MainView.xib in Resources */,
 				280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */,
+				273E769212F9EEB800E19B57 /* TextDB.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +220,8 @@
 				1D3623260D0F684500981E51 /* luvyaAppDelegate.m in Sources */,
 				289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */,
 				289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */,
-				273E75F212F98F9E00E19B57 /* textMessage.m in Sources */,
+				273E75F212F98F9E00E19B57 /* LYTextMessage.m in Sources */,
+				273E762F12F9E02E00E19B57 /* LYTextTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
