@@ -278,12 +278,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>34</integer>
+									<integer>5</integer>
+									<integer>3</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 166}, {186, 582}}</string>
+							<string>{{0, 0}, {186, 582}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -320,7 +321,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>LYTextEditTableCell.h</string>
+								<string>MainViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,33 +329,34 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>LYTextEditTableCell.h</string>
+										<string>MainViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>273E772112FA632300E19B57</string>
+										<string>273E778D12FB1BDD00E19B57</string>
 										<key>history</key>
 										<array>
 											<string>273E76AE12FA20BD00E19B57</string>
-											<string>273E76B312FA20BD00E19B57</string>
 											<string>273E76B512FA20BD00E19B57</string>
 											<string>273E76B712FA20BD00E19B57</string>
-											<string>273E76BA12FA20BD00E19B57</string>
 											<string>273E76BB12FA20BD00E19B57</string>
-											<string>273E76BD12FA20BD00E19B57</string>
-											<string>273E771412FA632300E19B57</string>
-											<string>273E771512FA632300E19B57</string>
-											<string>273E771612FA632300E19B57</string>
-											<string>273E771712FA632300E19B57</string>
-											<string>273E771812FA632300E19B57</string>
-											<string>273E771912FA632300E19B57</string>
-											<string>273E771A12FA632300E19B57</string>
-											<string>273E771B12FA632300E19B57</string>
-											<string>273E771C12FA632300E19B57</string>
-											<string>273E771D12FA632300E19B57</string>
-											<string>273E771E12FA632300E19B57</string>
-											<string>273E771F12FA632300E19B57</string>
-											<string>273E772012FA632300E19B57</string>
+											<string>273E773A12FB0C2200E19B57</string>
+											<string>273E773C12FB0C2200E19B57</string>
+											<string>273E773D12FB0C2200E19B57</string>
+											<string>273E773E12FB0C2200E19B57</string>
+											<string>273E773F12FB0C2200E19B57</string>
+											<string>273E774012FB0C2200E19B57</string>
+											<string>273E774112FB0C2200E19B57</string>
+											<string>273E774212FB0C2200E19B57</string>
+											<string>273E774312FB0C2200E19B57</string>
+											<string>273E774412FB0C2200E19B57</string>
+											<string>273E774512FB0C2200E19B57</string>
+											<string>273E774612FB0C2200E19B57</string>
+											<string>273E774712FB0C2200E19B57</string>
+											<string>273E778912FB1BDD00E19B57</string>
+											<string>273E778A12FB1BDD00E19B57</string>
+											<string>273E778B12FB1BDD00E19B57</string>
+											<string>273E778C12FB1BDD00E19B57</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -580,7 +582,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>FlipsideViewController.m</string>
+								<string>MainViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>

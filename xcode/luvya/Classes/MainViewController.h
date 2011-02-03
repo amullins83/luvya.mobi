@@ -10,11 +10,21 @@
 #import "LYTextMessage.h"
 #import "MessageUI/MessageUI.h"
 
+typedef enum {
+	sortLastUsed,
+	sortFirstUsed,
+	sortNumUses,
+	sortAlpha
+}  LYSortRule ;
+
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate> {
+
+	
 	UITableViewController *LYTextTableController;
 	NSArray *LYTexts;
 	uint CurrentLYTextsIndex;
 	LYTextMessage *ActiveText;
+	LYSortRule *thisRule;
 }
 
 - (IBAction)showInfo:(id)sender;
