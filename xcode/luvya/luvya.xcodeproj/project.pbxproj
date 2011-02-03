@@ -15,6 +15,7 @@
 		273E762F12F9E02E00E19B57 /* LYTextTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 273E762E12F9E02E00E19B57 /* LYTextTableCell.m */; };
 		273E768612F9E97400E19B57 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 273E768512F9E97400E19B57 /* MessageUI.framework */; };
 		273E769212F9EEB800E19B57 /* TextDB.plist in Resources */ = {isa = PBXBuildFile; fileRef = 273E769112F9EEB800E19B57 /* TextDB.plist */; };
+		273E769512FA09D500E19B57 /* LYTextEditTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 273E769412FA09D500E19B57 /* LYTextEditTableCell.m */; };
 		280E754D0DD40C5E005A515E /* FlipsideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754A0DD40C5E005A515E /* FlipsideView.xib */; };
 		280E754E0DD40C5E005A515E /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754B0DD40C5E005A515E /* MainView.xib */; };
 		280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754C0DD40C5E005A515E /* MainWindow.xib */; };
@@ -35,6 +36,8 @@
 		273E762E12F9E02E00E19B57 /* LYTextTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYTextTableCell.m; sourceTree = "<group>"; };
 		273E768512F9E97400E19B57 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		273E769112F9EEB800E19B57 /* TextDB.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TextDB.plist; sourceTree = "<group>"; };
+		273E769312FA09D500E19B57 /* LYTextEditTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYTextEditTableCell.h; sourceTree = "<group>"; };
+		273E769412FA09D500E19B57 /* LYTextEditTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYTextEditTableCell.m; sourceTree = "<group>"; };
 		280E754A0DD40C5E005A515E /* FlipsideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlipsideView.xib; sourceTree = "<group>"; };
 		280E754B0DD40C5E005A515E /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		280E754C0DD40C5E005A515E /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
@@ -113,6 +116,8 @@
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				273E762D12F9E02E00E19B57 /* LYTextTableCell.h */,
 				273E762E12F9E02E00E19B57 /* LYTextTableCell.m */,
+				273E769312FA09D500E19B57 /* LYTextEditTableCell.h */,
+				273E769412FA09D500E19B57 /* LYTextEditTableCell.m */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 				289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */,
 				273E75F212F98F9E00E19B57 /* LYTextMessage.m in Sources */,
 				273E762F12F9E02E00E19B57 /* LYTextTableCell.m in Sources */,
+				273E769512FA09D500E19B57 /* LYTextEditTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

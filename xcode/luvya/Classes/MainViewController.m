@@ -7,19 +7,15 @@
 //
 
 #import "MainViewController.h"
-
+#import "LYTextMessage.h"
 
 @implementation MainViewController
-
-
+@synthesize LYTexts;
+@synthesize LYTextTableController;
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 
-- (void)viewDidLoad {
-	[super viewDidLoad];
-	self.LYTextTableController = [[UITableViewController alloc] initWithNibName:@"LYTextTable" bundle:nil];
-	self.LYTexts = [[self textArrayFromPlist:@"TextDB.plist"] retain];
-}
+
 
 - (NSArray *)textArrayFromPlist:(NSString *)pListName {
 	NSString *appPath = [[NSBundle mainBundle] bundlePath];
@@ -27,33 +23,45 @@
 	NSDictionary *textDB = [[NSDictionary dictionaryWithContentsOfFile:filePath] retain];
 
 	// Allocate result
-	NSArray *result = [NSArray alloc];
-	
+	NSArray *result;
+	NSArray *dictArray;
 		// Check whether user/common list should be selected
 	if ([textDB objectForKey:@"showUserTexts"]) {
 		//Populate array from UserTexts
-		NSArray *dictArray = [[NSArray alloc] arrayWithArray:[textDB objectForKey:@"UserTexts"]];
+		dictArray = [NSArray arrayWithArray:[textDB objectForKey:@"UserTexts"]];
 	}
 	else {
 		//Populate array from CommonTexts
-		NSArray *dictArray = [[NSArray alloc] arrayWithArray:[textDB objectForKey:@"CommonTexts"]];
+		dictArray = [NSArray arrayWithArray:[textDB objectForKey:@"CommonTexts"]];
 	}
 	
-	for(int i = 0; i < [dictArray length]; i++)
+	for(int i = 0; i < [dictArray count]; i++)
 	{
 		// allocate new LYTextMessage
 		// init new LYTextMessage from plist table
-		LYTextMessage *newText = [[[LYTextMessage alloc] initWithID:[dictArray[i] TextID] numUses:[dictArray[i] Uses] lastUsed:[dictArray[i] LastUsed] firstUsed:[dictArray[i] FirstUsed] text:[dictArray[i] Text] retain];
+		LYTextMessage *newText = [[[LYTextMessage alloc]
+								   initWithID:[[dictArray objectAtIndex:i] TextID]
+								   numUses:[[dictArray objectAtIndex:i] Uses]
+								   lastUsed:[[dictArray objectAtIndex:i] LastUsed]
+								   firstUsed:[[dictArray objectAtIndex:i] FirstUsed]
+								   text:[[dictArray objectAtIndex:i] Text]] retain];
+								  
 			// Append LYTextMessage to result
 		[result arrayByAddingObject:newText];						  
 	}
 
-		[dictArray release]
+								  [dictArray release];
 								  
 	    // Return result
-		return result
+								  return result;
 }
 
+- (void)viewDidLoad {
+	[super viewDidLoad];
+	self.LYTextTableController = [[UITableViewController alloc] initWithNibName:@"LYTextTable" bundle:nil];
+	self.LYTexts = [[self textArrayFromPlist:@"TextDB.plist"] retain];
+}								  
+								  
 
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller {
     
