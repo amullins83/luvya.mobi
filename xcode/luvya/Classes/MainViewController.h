@@ -29,6 +29,7 @@ typedef enum {
 
 - (IBAction)showInfo:(id)sender;
 - (IBAction)sendMessage:(id)sender;
+- (IBAction)sortTextArray:(NSMutableArray *)texts by:(LYSortRule *)rule ascending:(BOOL *)asc;
 - (LYTextMessage *)getNextText;
 
 @property (nonatomic, retain) NSArray *LYTexts;

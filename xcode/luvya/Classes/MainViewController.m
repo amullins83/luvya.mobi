@@ -134,8 +134,9 @@
 }
 
 
-- (void)sortTextArray:(NSMutableArray *)texts ascending:(BOOL *)asc {
-	switch ((int)&thisRule) {
+- (IBAction)sortTextArray:(NSMutableArray *)texts by:(LYSortRule *)rule ascending:(BOOL *)asc {
+	thisRule = rule;
+	switch ((int)&rule) {
 		case sortAlpha:
 			if (asc) {
 				[self sortByAlphaTextArrayAscending:texts];
@@ -208,7 +209,7 @@
 	
 	[dictArray release];
 	
-	[self sortTextArray:result ascending:(BOOL *)[textDB objectForKey:@"sortAscending"]];
+	[self sortTextArray:result by:thisRule ascending:(BOOL *)[textDB objectForKey:@"sortAscending"]];
 	
 	// Return result
 	return result;
