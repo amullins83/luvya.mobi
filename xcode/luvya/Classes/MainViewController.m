@@ -12,6 +12,7 @@
 @implementation MainViewController
 @synthesize LYTexts;
 @synthesize LYTextTableController;
+@synthesize ActiveText;
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 
@@ -60,8 +61,12 @@
 	[super viewDidLoad];
 	self.LYTextTableController = [[UITableViewController alloc] initWithNibName:@"LYTextTable" bundle:nil];
 	self.LYTexts = [[self textArrayFromPlist:@"TextDB.plist"] retain];
+	CurrentLYTextsIndex = 0;
 }								  
 								  
+-(LYTextMessage *)getNextText {
+	return	[LYTexts objectAtIndex:CurrentLYTextsIndex++];
+}
 
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller {
     

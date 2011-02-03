@@ -9,7 +9,7 @@
 	};
 	1D3623250D0F684500981E51 /* luvyaAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1965, 1157}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1965, 1196}}";
 			sepNavSelRange = "{281, 14}";
 			sepNavVisRange = "{0, 699}";
 		};
@@ -66,15 +66,15 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1041, 403}}";
 			sepNavSelRange = "{663, 0}";
-			sepNavVisRange = "{3, 789}";
+			sepNavVisRange = "{0, 792}";
 			sepNavWindowFrame = "{{15, 315}, {750, 558}}";
 		};
 	};
 	273E75F112F98F9E00E19B57 /* LYTextMessage.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1048, 897}}";
-			sepNavSelRange = "{1574, 0}";
-			sepNavVisRange = "{963, 724}";
+			sepNavSelRange = "{1069, 0}";
+			sepNavVisRange = "{944, 750}";
 			sepNavWindowFrame = "{{38, 294}, {750, 558}}";
 		};
 	};
@@ -111,7 +111,7 @@
 		fRef = 273E75F112F98F9E00E19B57 /* LYTextMessage.m */;
 		name = "LYTextMessage.m: 50";
 		rLen = 0;
-		rLoc = 1577;
+		rLoc = 1584;
 		rType = 0;
 		vrLen = 391;
 		vrLoc = 962;
@@ -119,22 +119,29 @@
 	273E762D12F9E02E00E19B57 /* LYTextTableCell.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1037, 382}}";
-			sepNavSelRange = "{179, 0}";
-			sepNavVisRange = "{0, 324}";
+			sepNavSelRange = "{189, 0}";
+			sepNavVisRange = "{0, 454}";
 		};
 	};
 	273E762E12F9E02E00E19B57 /* LYTextTableCell.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1037, 520}}";
-			sepNavSelRange = "{685, 0}";
-			sepNavVisRange = "{159, 526}";
+			sepNavIntBoundsRect = "{{0, 0}, {1037, 559}}";
+			sepNavSelRange = "{778, 0}";
+			sepNavVisRange = "{192, 591}";
 		};
 	};
 	273E769312FA09D500E19B57 /* LYTextEditTableCell.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1037, 359}}";
-			sepNavSelRange = "{183, 0}";
-			sepNavVisRange = "{0, 331}";
+			sepNavIntBoundsRect = "{{0, 0}, {1037, 382}}";
+			sepNavSelRange = "{295, 0}";
+			sepNavVisRange = "{0, 474}";
+		};
+	};
+	273E769412FA09D500E19B57 /* LYTextEditTableCell.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1037, 572}}";
+			sepNavSelRange = "{817, 0}";
+			sepNavVisRange = "{166, 661}";
 		};
 	};
 	273E76AA12FA20A800E19B57 /* PBXTextBookmark */ = {
@@ -142,7 +149,7 @@
 		fRef = 273E75F112F98F9E00E19B57 /* LYTextMessage.m */;
 		name = "LYTextMessage.m: 51";
 		rLen = 0;
-		rLoc = 1577;
+		rLoc = 1584;
 		rType = 0;
 		vrLen = 467;
 		vrLoc = 906;
@@ -153,7 +160,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 42;
+		rLoc = 43;
 		rType = 1;
 	};
 	273E76AC12FA20A800E19B57 /* PBXTextBookmark */ = {
@@ -161,7 +168,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 43";
 		rLen = 0;
-		rLoc = 1229;
+		rLoc = 1253;
 		rType = 0;
 		vrLen = 394;
 		vrLoc = 1020;
@@ -442,7 +449,7 @@
 		fRef = 273E769312FA09D500E19B57 /* LYTextEditTableCell.h */;
 		name = "LYTextEditTableCell.h: 17";
 		rLen = 0;
-		rLoc = 325;
+		rLoc = 468;
 		rType = 0;
 		vrLen = 306;
 		vrLoc = 0;
@@ -452,7 +459,7 @@
 		fRef = 273E762D12F9E02E00E19B57 /* LYTextTableCell.h */;
 		name = "LYTextTableCell.h: 16";
 		rLen = 0;
-		rLoc = 294;
+		rLoc = 356;
 		rType = 0;
 		vrLen = 299;
 		vrLoc = 0;
@@ -462,7 +469,7 @@
 		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
 		name = "FlipsideViewController.m: 30";
 		rLen = 0;
-		rLoc = 751;
+		rLoc = 2187;
 		rType = 0;
 		vrLen = 785;
 		vrLoc = 0;
@@ -472,7 +479,7 @@
 		fRef = 289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */;
 		name = "FlipsideViewController.h: 13";
 		rLen = 0;
-		rLoc = 257;
+		rLoc = 213;
 		rType = 0;
 		vrLen = 740;
 		vrLoc = 0;
@@ -492,7 +499,7 @@
 		fRef = 289233A80DB2D0DB0083E9F9 /* MainViewController.h */;
 		name = "MainViewController.h: 24";
 		rLen = 0;
-		rLoc = 623;
+		rLoc = 727;
 		rType = 0;
 		vrLen = 629;
 		vrLoc = 0;
@@ -502,7 +509,7 @@
 		fRef = 273E75F112F98F9E00E19B57 /* LYTextMessage.m */;
 		name = "LYTextMessage.m: 59";
 		rLen = 0;
-		rLoc = 1687;
+		rLoc = 1694;
 		rType = 0;
 		vrLen = 658;
 		vrLoc = 729;
@@ -513,7 +520,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 42;
+		rLoc = 43;
 		rType = 1;
 	};
 	273E76C612FA20BD00E19B57 /* PBXTextBookmark */ = {
@@ -521,7 +528,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 43";
 		rLen = 0;
-		rLoc = 1229;
+		rLoc = 1253;
 		rType = 0;
 		vrLen = 929;
 		vrLoc = 894;
@@ -532,7 +539,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 46;
+		rLoc = 47;
 		rType = 1;
 	};
 	273E76D412FA22A900E19B57 /* PBXTextBookmark */ = {
@@ -540,7 +547,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 47";
 		rLen = 0;
-		rLoc = 1462;
+		rLoc = 1486;
 		rType = 0;
 		vrLen = 569;
 		vrLoc = 1020;
@@ -560,7 +567,7 @@
 		fRef = 273E75F112F98F9E00E19B57 /* LYTextMessage.m */;
 		name = "LYTextMessage.m: 57";
 		rLen = 0;
-		rLoc = 1629;
+		rLoc = 1636;
 		rType = 0;
 		vrLen = 892;
 		vrLoc = 561;
@@ -570,7 +577,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 14";
 		rLen = 0;
-		rLoc = 281;
+		rLoc = 305;
 		rType = 0;
 		vrLen = 931;
 		vrLoc = 41;
@@ -580,7 +587,7 @@
 		fRef = 289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */;
 		name = "FlipsideViewController.h: 13";
 		rLen = 0;
-		rLoc = 257;
+		rLoc = 213;
 		rType = 0;
 		vrLen = 721;
 		vrLoc = 145;
@@ -590,7 +597,7 @@
 		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
 		name = "FlipsideViewController.m: 47";
 		rLen = 0;
-		rLoc = 1738;
+		rLoc = 3124;
 		rType = 0;
 		vrLen = 1289;
 		vrLoc = 251;
@@ -600,7 +607,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 47";
 		rLen = 0;
-		rLoc = 1462;
+		rLoc = 1486;
 		rType = 0;
 		vrLen = 569;
 		vrLoc = 1054;
@@ -611,7 +618,7 @@
 		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 0;
-		rLoc = 32;
+		rLoc = 75;
 		rType = 1;
 	};
 	273E76EE12FA504E00E19B57 /* PBXTextBookmark */ = {
@@ -619,7 +626,7 @@
 		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
 		name = "FlipsideViewController.m: 33";
 		rLen = 0;
-		rLoc = 805;
+		rLoc = 2193;
 		rType = 0;
 		vrLen = 795;
 		vrLoc = 763;
@@ -639,7 +646,7 @@
 		fRef = 273E75F112F98F9E00E19B57 /* LYTextMessage.m */;
 		name = "LYTextMessage.m: 58";
 		rLen = 0;
-		rLoc = 1574;
+		rLoc = 1581;
 		rType = 0;
 		vrLen = 724;
 		vrLoc = 963;
@@ -649,7 +656,7 @@
 		fRef = 289233A80DB2D0DB0083E9F9 /* MainViewController.h */;
 		name = "MainViewController.h: 24";
 		rLen = 0;
-		rLoc = 623;
+		rLoc = 727;
 		rType = 0;
 		vrLen = 629;
 		vrLoc = 0;
@@ -659,7 +666,7 @@
 		fRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */;
 		name = "MainViewController.m: 14";
 		rLen = 0;
-		rLoc = 281;
+		rLoc = 305;
 		rType = 0;
 		vrLen = 643;
 		vrLoc = 2831;
@@ -669,7 +676,7 @@
 		fRef = 289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */;
 		name = "FlipsideViewController.h: 13";
 		rLen = 0;
-		rLoc = 257;
+		rLoc = 213;
 		rType = 0;
 		vrLen = 721;
 		vrLoc = 145;
@@ -679,7 +686,7 @@
 		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
 		name = "FlipsideViewController.m: 87";
 		rLen = 0;
-		rLoc = 2634;
+		rLoc = 4112;
 		rType = 0;
 		vrLen = 667;
 		vrLoc = 1967;
@@ -729,7 +736,7 @@
 		fRef = 273E762D12F9E02E00E19B57 /* LYTextTableCell.h */;
 		name = "LYTextTableCell.h: 10";
 		rLen = 0;
-		rLoc = 179;
+		rLoc = 210;
 		rType = 0;
 		vrLen = 324;
 		vrLoc = 0;
@@ -739,7 +746,7 @@
 		fRef = 273E762E12F9E02E00E19B57 /* LYTextTableCell.m */;
 		name = "LYTextTableCell.m: 40";
 		rLen = 0;
-		rLoc = 685;
+		rLoc = 783;
 		rType = 0;
 		vrLen = 526;
 		vrLoc = 159;
@@ -749,7 +756,7 @@
 		fRef = 273E769312FA09D500E19B57 /* LYTextEditTableCell.h */;
 		name = "LYTextEditTableCell.h: 17";
 		rLen = 0;
-		rLoc = 325;
+		rLoc = 468;
 		rType = 0;
 		vrLen = 306;
 		vrLoc = 0;
@@ -759,37 +766,95 @@
 		fRef = 273E769312FA09D500E19B57 /* LYTextEditTableCell.h */;
 		name = "LYTextEditTableCell.h: 10";
 		rLen = 0;
-		rLoc = 183;
+		rLoc = 218;
 		rType = 0;
 		vrLen = 331;
 		vrLoc = 0;
 	};
+	273E773012FA7A4F00E19B57 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 273E762E12F9E02E00E19B57 /* LYTextTableCell.m */;
+		name = "LYTextTableCell.m: 15";
+		rLen = 0;
+		rLoc = 234;
+		rType = 0;
+		vrLen = 361;
+		vrLoc = 159;
+	};
+	273E773112FA7A4F00E19B57 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */;
+		name = "FlipsideViewController.m: 63";
+		rLen = 0;
+		rLoc = 1854;
+		rType = 0;
+		vrLen = 330;
+		vrLoc = 1628;
+	};
+	273E773212FA7A4F00E19B57 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Expected specifier-qualifier-list before 'FlipsideViewController'";
+		fRef = 273E769312FA09D500E19B57 /* LYTextEditTableCell.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 14;
+		rType = 1;
+	};
+	273E773312FA7A4F00E19B57 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 273E769312FA09D500E19B57 /* LYTextEditTableCell.h */;
+		name = "LYTextEditTableCell.h: 15";
+		rLen = 0;
+		rLoc = 295;
+		rType = 0;
+		vrLen = 341;
+		vrLoc = 133;
+	};
+	273E773612FA7AC700E19B57 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Expected specifier-qualifier-list before 'FlipsideViewController'";
+		fRef = 273E769312FA09D500E19B57 /* LYTextEditTableCell.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 14;
+		rType = 1;
+	};
+	273E773712FA7AC700E19B57 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 273E769312FA09D500E19B57 /* LYTextEditTableCell.h */;
+		name = "LYTextEditTableCell.h: 15";
+		rLen = 0;
+		rLoc = 295;
+		rType = 0;
+		vrLen = 341;
+		vrLoc = 133;
+	};
 	289233A80DB2D0DB0083E9F9 /* MainViewController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1037, 382}}";
-			sepNavSelRange = "{623, 0}";
-			sepNavVisRange = "{0, 629}";
+			sepNavSelRange = "{106, 0}";
+			sepNavVisRange = "{0, 733}";
 		};
 	};
 	289233A90DB2D0DB0083E9F9 /* MainViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1037, 1599}}";
-			sepNavSelRange = "{281, 0}";
-			sepNavVisRange = "{2831, 643}";
+			sepNavIntBoundsRect = "{{0, 0}, {1037, 1625}}";
+			sepNavSelRange = "{2082, 0}";
+			sepNavVisRange = "{0, 840}";
 		};
 	};
 	289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1037, 468}}";
-			sepNavSelRange = "{257, 0}";
-			sepNavVisRange = "{145, 721}";
+			sepNavIntBoundsRect = "{{0, 0}, {1037, 507}}";
+			sepNavSelRange = "{110, 0}";
+			sepNavVisRange = "{0, 829}";
 		};
 	};
 	289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {2049, 1105}}";
-			sepNavSelRange = "{2634, 0}";
-			sepNavVisRange = "{1967, 667}";
+			sepNavIntBoundsRect = "{{0, 0}, {2084, 1677}}";
+			sepNavSelRange = "{3395, 0}";
+			sepNavVisRange = "{0, 821}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
@@ -905,6 +970,12 @@
 			273E771F12FA632300E19B57 /* PBXTextBookmark */ = 273E771F12FA632300E19B57 /* PBXTextBookmark */;
 			273E772012FA632300E19B57 /* PBXTextBookmark */ = 273E772012FA632300E19B57 /* PBXTextBookmark */;
 			273E772112FA632300E19B57 /* PBXTextBookmark */ = 273E772112FA632300E19B57 /* PBXTextBookmark */;
+			273E773012FA7A4F00E19B57 /* PBXTextBookmark */ = 273E773012FA7A4F00E19B57 /* PBXTextBookmark */;
+			273E773112FA7A4F00E19B57 /* PBXTextBookmark */ = 273E773112FA7A4F00E19B57 /* PBXTextBookmark */;
+			273E773212FA7A4F00E19B57 /* XCBuildMessageTextBookmark */ = 273E773212FA7A4F00E19B57 /* XCBuildMessageTextBookmark */;
+			273E773312FA7A4F00E19B57 /* PBXTextBookmark */ = 273E773312FA7A4F00E19B57 /* PBXTextBookmark */;
+			273E773612FA7AC700E19B57 /* XCBuildMessageTextBookmark */ = 273E773612FA7AC700E19B57 /* XCBuildMessageTextBookmark */;
+			273E773712FA7AC700E19B57 /* PBXTextBookmark */ = 273E773712FA7AC700E19B57 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 273E75DC12F8EBEC00E19B57 /* Source Control */;
 		userBuildSettings = {

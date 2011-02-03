@@ -41,7 +41,7 @@
 }
 
 -(LYTextMessage *)initWithMessage:(LYTextMessage *)other {
-	[super init];
+	self = [super init];
 	TextID = [other TextID];
 	Uses = [other Uses];
 	LastUsed = [[[NSDate alloc] initWithTimeInterval:0 sinceDate:[other LastUsed]] retain];

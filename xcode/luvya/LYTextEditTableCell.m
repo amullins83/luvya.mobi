@@ -12,12 +12,14 @@
 @implementation LYTextEditTableCell
 
 @synthesize LYText;
+@synthesize delegate;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         // Initialization code.
+		self.LYText = [delegate getNextText];
     }
     return self;
 }
@@ -28,6 +30,10 @@
     [super setSelected:selected animated:animated];
     
     // Configure the view for the selected state.
+	// Activate keyboard
+	// Set LYText = keyboard text
+	// Resign first responder
+	delegate.ActiveText = self.LYText;
 }
 
 
