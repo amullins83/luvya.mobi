@@ -13,6 +13,7 @@
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<integer value="34"/>
+			<integer value="39"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -177,9 +178,10 @@
 			</object>
 			<object class="IBUITableViewController" id="317991945">
 				<object class="IBUITableView" key="IBUIView" id="702693986">
-					<nil key="NSNextResponder"/>
+					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">274</int>
-					<string key="NSFrameSize">{320, 401}</string>
+					<string key="NSFrame">{{0, 29}, {320, 401}}</string>
+					<reference key="NSSuperview"/>
 					<reference key="IBUIBackgroundColor" ref="610762040"/>
 					<bool key="IBUIOpaque">NO</bool>
 					<bool key="IBUIClipsSubviews">YES</bool>
@@ -228,14 +230,6 @@
 						<reference key="destination" ref="317991945"/>
 					</object>
 					<int key="connectionID">43</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">view</string>
-						<reference key="source" ref="317991945"/>
-						<reference key="destination" ref="702693986"/>
-					</object>
-					<int key="connectionID">44</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -316,6 +310,7 @@
 							<reference ref="702693986"/>
 						</object>
 						<reference key="parent" ref="0"/>
+						<string key="objectName">LYTextTableViewController</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">45</int>

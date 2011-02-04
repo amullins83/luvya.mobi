@@ -279,8 +279,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
-									<integer>3</integer>
+									<integer>8</integer>
+									<integer>6</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -322,7 +322,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MainViewController.m</string>
+								<string>FlipsideViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -330,11 +330,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MainViewController.m</string>
+										<string>FlipsideViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>273E78CF12FB8FAD00E19B57</string>
+										<string>273E795E12FBA8A100E19B57</string>
 										<key>history</key>
 										<array>
 											<string>273E76AE12FA20BD00E19B57</string>
@@ -356,8 +356,9 @@
 											<string>273E78A212FB87FF00E19B57</string>
 											<string>273E78A312FB87FF00E19B57</string>
 											<string>273E78A412FB87FF00E19B57</string>
-											<string>273E78BA12FB88F600E19B57</string>
-											<string>273E78C312FB896C00E19B57</string>
+											<string>273E793C12FBA43D00E19B57</string>
+											<string>273E795512FBA7FD00E19B57</string>
+											<string>273E795012FBA72D00E19B57</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -555,7 +556,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>273E78D012FB8FAD00E19B57</string>
 		<string>273E785912FB74C300E19B57</string>
 		<string>273E782612FB6AEF00E19B57</string>
 		<string>273E781112FB690400E19B57</string>
@@ -582,6 +582,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -604,8 +606,6 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>

@@ -58,6 +58,8 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor viewFlipsideBackgroundColor];      
 	self.LYTexts = [[self textArrayFromPlist:@"TextDB.plist"] retain];
+	[LYUserTextEditTableController.view initWithFrame:CGRectMake(0, 44, 320, 369)];
+	[self.view addSubview:LYUserTextEditTableController.view];	
 	CurrentLYTextsIndex = 0;
 }
 

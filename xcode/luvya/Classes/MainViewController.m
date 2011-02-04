@@ -252,6 +252,8 @@
 	thisRule = malloc(sizeof(LYSortRule));
 
 	self.LYTexts = [[self textArrayFromPlist:@"TextDB.plist"] retain];
+	[LYTextTableController.view initWithFrame:CGRectMake(0, 0, 320, 402)];
+	[self.view addSubview:LYTextTableController.view]; 
 	CurrentLYTextsIndex = 0;
 }								  
 								  
