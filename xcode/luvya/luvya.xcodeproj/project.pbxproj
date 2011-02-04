@@ -26,6 +26,7 @@
 		273E77C212FB3BC900E19B57 /* ButtonBGIActive.png in Resources */ = {isa = PBXBuildFile; fileRef = 273E77C012FB3BC900E19B57 /* ButtonBGIActive.png */; };
 		273E77C612FB4AED00E19B57 /* GearShape.png in Resources */ = {isa = PBXBuildFile; fileRef = 273E77C512FB4AED00E19B57 /* GearShape.png */; };
 		273E798512FC6B8800E19B57 /* GearShapeLighter.png in Resources */ = {isa = PBXBuildFile; fileRef = 273E798412FC6B8800E19B57 /* GearShapeLighter.png */; };
+		273E79C212FCA8DC00E19B57 /* LYicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 273E79C112FCA8DC00E19B57 /* LYicon.png */; };
 		280E754D0DD40C5E005A515E /* FlipsideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754A0DD40C5E005A515E /* FlipsideView.xib */; };
 		280E754E0DD40C5E005A515E /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754B0DD40C5E005A515E /* MainView.xib */; };
 		280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754C0DD40C5E005A515E /* MainWindow.xib */; };
@@ -58,6 +59,7 @@
 		273E77C012FB3BC900E19B57 /* ButtonBGIActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonBGIActive.png; sourceTree = "<group>"; };
 		273E77C512FB4AED00E19B57 /* GearShape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GearShape.png; sourceTree = "<group>"; };
 		273E798412FC6B8800E19B57 /* GearShapeLighter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GearShapeLighter.png; sourceTree = "<group>"; };
+		273E79C112FCA8DC00E19B57 /* LYicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LYicon.png; sourceTree = "<group>"; };
 		280E754A0DD40C5E005A515E /* FlipsideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlipsideView.xib; sourceTree = "<group>"; };
 		280E754B0DD40C5E005A515E /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		280E754C0DD40C5E005A515E /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				273E79C112FCA8DC00E19B57 /* LYicon.png */,
 				273E798412FC6B8800E19B57 /* GearShapeLighter.png */,
 				273E77C512FB4AED00E19B57 /* GearShape.png */,
 				273E77BF12FB3BC900E19B57 /* ButtonBGInactive.png */,
@@ -251,6 +254,7 @@
 				273E77C212FB3BC900E19B57 /* ButtonBGIActive.png in Resources */,
 				273E77C612FB4AED00E19B57 /* GearShape.png in Resources */,
 				273E798512FC6B8800E19B57 /* GearShapeLighter.png in Resources */,
+				273E79C212FCA8DC00E19B57 /* LYicon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
