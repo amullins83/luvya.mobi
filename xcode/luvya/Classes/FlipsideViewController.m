@@ -23,8 +23,8 @@
 	NSDictionary *textDB = [[NSDictionary dictionaryWithContentsOfFile:filePath] retain];
 	
 	// Allocate result
-	NSArray *result;
-	NSArray *dictArray;
+	NSArray *result = [[NSArray alloc] init];
+	NSArray *dictArray = [[NSArray alloc] init];
 	// Check whether user/common list should be selected
 	if ([textDB objectForKey:@"showUserTexts"]) {
 		//Populate array from UserTexts
@@ -40,17 +40,15 @@
 		// allocate new LYTextMessage
 		// init new LYTextMessage from plist table
 		LYTextMessage *newText = [[[LYTextMessage alloc]
-								   initWithID:[[dictArray objectAtIndex:i] TextID]
-								   numUses:[[dictArray objectAtIndex:i] Uses]
-								   lastUsed:[[dictArray objectAtIndex:i] LastUsed]
-								   firstUsed:[[dictArray objectAtIndex:i] FirstUsed]
-								   text:[[dictArray objectAtIndex:i] Text]] retain];
+								   initWithID:(NSUInteger *)[[dictArray objectAtIndex:i] objectForKey:@"TextID"]
+								   numUses:(NSUInteger *)[[dictArray objectAtIndex:i] objectForKey:@"Uses"]
+								   lastUsed:[[dictArray objectAtIndex:i] objectForKey:@"LastUsed"]
+								   firstUsed:[[dictArray objectAtIndex:i] objectForKey:@"FirstUsed"]
+								   text:[[dictArray objectAtIndex:i] objectForKey:@"Text"]] retain];
 		
 		// Append LYTextMessage to result
 		[result arrayByAddingObject:newText];						  
 	}
-	
-	[dictArray release];
 	
 	// Return result
 	return result;
@@ -67,6 +65,10 @@
 
 - (IBAction)done:(id)sender {
 	[self.delegate flipsideViewControllerDidFinish:self];	
+}
+
+- (IBAction)toggleUserTexts:(id)sender {
+	doShowUserTexts = !doShowUserTexts;
 }
 
 - (IBAction)addUserText:(id)sender {

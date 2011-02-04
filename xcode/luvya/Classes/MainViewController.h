@@ -21,15 +21,17 @@ typedef enum {
 
 	
 	UITableViewController *LYTextTableController;
-	NSArray *LYTexts;
+	NSMutableArray *LYTexts;
 	uint CurrentLYTextsIndex;
 	LYTextMessage *ActiveText;
 	LYSortRule *thisRule;
+	BOOL *thisAscending;
 }
 
 - (IBAction)showInfo:(id)sender;
 - (IBAction)sendMessage:(id)sender;
-- (IBAction)sortTextArray:(NSMutableArray *)texts by:(LYSortRule *)rule ascending:(BOOL *)asc;
+- (IBAction)setSortOrder:(UISegmentedControl *)sender;
+- (IBAction)toggleAscending:(UIButton *)sender;
 - (LYTextMessage *)getNextText;
 
 @property (nonatomic, retain) NSArray *LYTexts;

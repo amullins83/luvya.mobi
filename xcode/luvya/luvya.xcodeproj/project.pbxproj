@@ -16,6 +16,15 @@
 		273E768612F9E97400E19B57 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 273E768512F9E97400E19B57 /* MessageUI.framework */; };
 		273E769212F9EEB800E19B57 /* TextDB.plist in Resources */ = {isa = PBXBuildFile; fileRef = 273E769112F9EEB800E19B57 /* TextDB.plist */; };
 		273E769512FA09D500E19B57 /* LYTextEditTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 273E769412FA09D500E19B57 /* LYTextEditTableCell.m */; };
+		273E77A912FB304000E19B57 /* nIconTransparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 273E77A512FB304000E19B57 /* nIconTransparent.png */; };
+		273E77AA12FB304000E19B57 /* LastUsedIconTransparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 273E77A612FB304000E19B57 /* LastUsedIconTransparent.png */; };
+		273E77AB12FB304000E19B57 /* FirstUsedIconTransparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 273E77A712FB304000E19B57 /* FirstUsedIconTransparent.png */; };
+		273E77AC12FB304000E19B57 /* AIconTransparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 273E77A812FB304000E19B57 /* AIconTransparent.png */; };
+		273E77B112FB358E00E19B57 /* ArrowUpTransparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 273E77AF12FB358E00E19B57 /* ArrowUpTransparent.png */; };
+		273E77B212FB358E00E19B57 /* ArrowDownTransparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 273E77B012FB358E00E19B57 /* ArrowDownTransparent.png */; };
+		273E77C112FB3BC900E19B57 /* ButtonBGInactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 273E77BF12FB3BC900E19B57 /* ButtonBGInactive.png */; };
+		273E77C212FB3BC900E19B57 /* ButtonBGIActive.png in Resources */ = {isa = PBXBuildFile; fileRef = 273E77C012FB3BC900E19B57 /* ButtonBGIActive.png */; };
+		273E77C612FB4AED00E19B57 /* GearShape.png in Resources */ = {isa = PBXBuildFile; fileRef = 273E77C512FB4AED00E19B57 /* GearShape.png */; };
 		280E754D0DD40C5E005A515E /* FlipsideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754A0DD40C5E005A515E /* FlipsideView.xib */; };
 		280E754E0DD40C5E005A515E /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754B0DD40C5E005A515E /* MainView.xib */; };
 		280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754C0DD40C5E005A515E /* MainWindow.xib */; };
@@ -38,6 +47,15 @@
 		273E769112F9EEB800E19B57 /* TextDB.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TextDB.plist; sourceTree = "<group>"; };
 		273E769312FA09D500E19B57 /* LYTextEditTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYTextEditTableCell.h; sourceTree = "<group>"; };
 		273E769412FA09D500E19B57 /* LYTextEditTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYTextEditTableCell.m; sourceTree = "<group>"; };
+		273E77A512FB304000E19B57 /* nIconTransparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nIconTransparent.png; sourceTree = "<group>"; };
+		273E77A612FB304000E19B57 /* LastUsedIconTransparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LastUsedIconTransparent.png; sourceTree = "<group>"; };
+		273E77A712FB304000E19B57 /* FirstUsedIconTransparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FirstUsedIconTransparent.png; sourceTree = "<group>"; };
+		273E77A812FB304000E19B57 /* AIconTransparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AIconTransparent.png; sourceTree = "<group>"; };
+		273E77AF12FB358E00E19B57 /* ArrowUpTransparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArrowUpTransparent.png; sourceTree = "<group>"; };
+		273E77B012FB358E00E19B57 /* ArrowDownTransparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArrowDownTransparent.png; sourceTree = "<group>"; };
+		273E77BF12FB3BC900E19B57 /* ButtonBGInactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonBGInactive.png; sourceTree = "<group>"; };
+		273E77C012FB3BC900E19B57 /* ButtonBGIActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonBGIActive.png; sourceTree = "<group>"; };
+		273E77C512FB4AED00E19B57 /* GearShape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GearShape.png; sourceTree = "<group>"; };
 		280E754A0DD40C5E005A515E /* FlipsideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlipsideView.xib; sourceTree = "<group>"; };
 		280E754B0DD40C5E005A515E /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		280E754C0DD40C5E005A515E /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
@@ -134,6 +152,15 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				273E77C512FB4AED00E19B57 /* GearShape.png */,
+				273E77BF12FB3BC900E19B57 /* ButtonBGInactive.png */,
+				273E77C012FB3BC900E19B57 /* ButtonBGIActive.png */,
+				273E77AF12FB358E00E19B57 /* ArrowUpTransparent.png */,
+				273E77B012FB358E00E19B57 /* ArrowDownTransparent.png */,
+				273E77A512FB304000E19B57 /* nIconTransparent.png */,
+				273E77A612FB304000E19B57 /* LastUsedIconTransparent.png */,
+				273E77A712FB304000E19B57 /* FirstUsedIconTransparent.png */,
+				273E77A812FB304000E19B57 /* AIconTransparent.png */,
 				280E754A0DD40C5E005A515E /* FlipsideView.xib */,
 				280E754B0DD40C5E005A515E /* MainView.xib */,
 				280E754C0DD40C5E005A515E /* MainWindow.xib */,
@@ -211,6 +238,15 @@
 				280E754E0DD40C5E005A515E /* MainView.xib in Resources */,
 				280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */,
 				273E769212F9EEB800E19B57 /* TextDB.plist in Resources */,
+				273E77A912FB304000E19B57 /* nIconTransparent.png in Resources */,
+				273E77AA12FB304000E19B57 /* LastUsedIconTransparent.png in Resources */,
+				273E77AB12FB304000E19B57 /* FirstUsedIconTransparent.png in Resources */,
+				273E77AC12FB304000E19B57 /* AIconTransparent.png in Resources */,
+				273E77B112FB358E00E19B57 /* ArrowUpTransparent.png in Resources */,
+				273E77B212FB358E00E19B57 /* ArrowDownTransparent.png in Resources */,
+				273E77C112FB3BC900E19B57 /* ButtonBGInactive.png in Resources */,
+				273E77C212FB3BC900E19B57 /* ButtonBGIActive.png in Resources */,
+				273E77C612FB4AED00E19B57 /* GearShape.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

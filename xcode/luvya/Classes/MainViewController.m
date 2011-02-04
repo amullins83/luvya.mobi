@@ -134,7 +134,7 @@
 }
 
 
-- (IBAction)sortTextArray:(NSMutableArray *)texts by:(LYSortRule *)rule ascending:(BOOL *)asc {
+- (void)sortTextArray:(NSMutableArray *)texts by:(LYSortRule *)rule ascending:(BOOL *)asc {
 	thisRule = rule;
 	switch ((int)&rule) {
 		case sortAlpha:
@@ -174,14 +174,16 @@
 	}
 }
 
-- (NSArray *)textArrayFromPlist:(NSString *)pListName {
+
+
+- (NSMutableArray *)textArrayFromPlist:(NSString *)pListName {
 	NSString *appPath = [[NSBundle mainBundle] bundlePath];
 	NSString *filePath = [appPath stringByAppendingPathComponent:pListName];
 	NSDictionary *textDB = [[NSDictionary dictionaryWithContentsOfFile:filePath] retain];
 	thisRule = (LYSortRule *)[textDB objectForKey:@"sortRule"];
 	// Allocate result
-	NSMutableArray *result;
-	NSArray *dictArray;
+	NSMutableArray *resultArray = [[NSMutableArray alloc] init];
+	NSArray *dictArray = [[NSArray alloc] init];
 	// Check whether user/common list should be selected
 	if ([textDB objectForKey:@"showUserTexts"]) {
 		//Populate array from UserTexts
@@ -196,29 +198,59 @@
 	{
 		// allocate new LYTextMessage
 		// init new LYTextMessage from plist table
+		NSUInteger *newTextID = malloc(sizeof(NSUInteger));
+		NSUInteger *newUses = malloc(sizeof(NSUInteger));
+		newTextID = (NSUInteger *)[[dictArray objectAtIndex:i] objectForKey:@"TextID"];
+		newUses = (NSUInteger *)[[dictArray objectAtIndex:i] objectForKey:@"Uses"];
 		LYTextMessage *newText = [[[LYTextMessage alloc]
-								   initWithID:[[dictArray objectAtIndex:i] TextID]
-								   numUses:[[dictArray objectAtIndex:i] Uses]
-								   lastUsed:[[dictArray objectAtIndex:i] LastUsed]
-								   firstUsed:[[dictArray objectAtIndex:i] FirstUsed]
-								   text:[[dictArray objectAtIndex:i] Text]] retain];
+								   initWithID:newTextID
+								   numUses:newUses
+								   lastUsed:[[dictArray objectAtIndex:i] objectForKey:@"LastUsed"]
+								   firstUsed:[[dictArray objectAtIndex:i] objectForKey:@"FirstUsed"]
+								   text:[[dictArray objectAtIndex:i] objectForKey:@"Text"]] retain];
 		
 		// Append LYTextMessage to result
-		[result insertObject:newText atIndex:i];						  
+		[resultArray insertObject:newText atIndex:i];						  
 	}
 	
-	[dictArray release];
-	
-	[self sortTextArray:result by:thisRule ascending:(BOOL *)[textDB objectForKey:@"sortAscending"]];
+	[self sortTextArray:resultArray by:thisRule ascending:(BOOL *)[textDB objectForKey:@"sortAscending"]];
 	
 	// Return result
-	return result;
+	return resultArray;
 }
 
+-(IBAction)setSortOrder:(UISegmentedControl *)sender {
+	thisRule = (LYSortRule *)[sender selectedSegmentIndex];
+	[self sortTextArray:LYTexts by:thisRule ascending:thisAscending];
+	CurrentLYTextsIndex = 0;
+//Reload the table cells in the new order
+	//[LYTextTableController loadView];
+}
+
+-(IBAction)toggleAscending:(UIButton *)sender {
+    *thisAscending = !&thisAscending;
+	[self sortTextArray:LYTexts by:thisRule ascending:thisAscending];
+	CurrentLYTextsIndex = 0;
+	//Reload the table cells in the new order
+	//[LYTextTableController loadView];
+	UIImage *arrowImg;
+	
+	if (*thisAscending) {
+		arrowImg = [UIImage imageWithContentsOfFile:[[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"ArrowDownTransparent.png"]];
+	}
+	else {
+		arrowImg = [UIImage imageWithContentsOfFile:[[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"ArrowUpTransparent.png"]];
+	}
+
+	[sender setImage:arrowImg forState:UIControlStateNormal];
+	[sender setImage:arrowImg forState:UIControlStateHighlighted];
+}
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	self.LYTextTableController = [[UITableViewController alloc] initWithNibName:@"LYTextTable" bundle:nil];
+	thisAscending = malloc(sizeof(BOOL));
+	thisRule = malloc(sizeof(LYSortRule));
+
 	self.LYTexts = [[self textArrayFromPlist:@"TextDB.plist"] retain];
 	CurrentLYTextsIndex = 0;
 }								  
@@ -239,6 +271,7 @@
 	controller.delegate = self;
 	
 	controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+	
 	[self presentModalViewController:controller animated:YES];
 	
 	[controller release];

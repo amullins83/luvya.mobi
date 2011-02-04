@@ -29,6 +29,7 @@
 - (IBAction)done:(id)sender;
 - (IBAction)addUserText:(id)sender;
 - (IBAction)removeUserText:(id)sender;
+- (IBAction)toggleUserTexts:(id)sender;
 - (LYTextMessage *)getNextText;
 
 @end
