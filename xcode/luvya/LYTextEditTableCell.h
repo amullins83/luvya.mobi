@@ -8,14 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "LYTextMessage.h"
-#import "FlipsideViewController.h"
+//#import "FlipsideViewController.h"
 
 @interface LYTextEditTableCell : UITableViewCell {
 	LYTextMessage *LYText;
-	FlipsideViewController *delegate;
+	UITableViewController *delegate;
 }
 
 @property (nonatomic, retain) IBOutlet LYTextMessage *LYText;
-@property (nonatomic, assign) IBOutlet FlipsideViewController *delegate;
+@property (nonatomic, assign) IBOutlet UITableViewController *delegate;
 
 @end

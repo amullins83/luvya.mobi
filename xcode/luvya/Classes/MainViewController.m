@@ -11,7 +11,6 @@
 
 @implementation MainViewController
 @synthesize LYTexts;
-@synthesize LYTextTableController;
 @synthesize ActiveText;
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -224,15 +223,15 @@
 	[self sortTextArray:LYTexts by:thisRule ascending:thisAscending];
 	CurrentLYTextsIndex = 0;
 //Reload the table cells in the new order
-	//[LYTextTableController loadView];
+	//[LYTableVC loadView];
 }
 
 -(IBAction)toggleAscending:(UIButton *)sender {
-    *thisAscending = !&thisAscending;
+    *thisAscending = !*thisAscending;
 	[self sortTextArray:LYTexts by:thisRule ascending:thisAscending];
 	CurrentLYTextsIndex = 0;
 	//Reload the table cells in the new order
-	//[LYTextTableController loadView];
+	//[LYTableVC loadView];
 	UIImage *arrowImg;
 	
 	if (*thisAscending) {
@@ -252,8 +251,7 @@
 	thisRule = malloc(sizeof(LYSortRule));
 
 	self.LYTexts = [[self textArrayFromPlist:@"TextDB.plist"] retain];
-	[LYTextTableController.view initWithFrame:CGRectMake(0, 0, 320, 402)];
-	[self.view addSubview:LYTextTableController.view]; 
+
 	CurrentLYTextsIndex = 0;
 }								  
 								  
@@ -279,6 +277,59 @@
 	[controller release];
 }
 
+
+
+- (void)didReceiveMemoryWarning {
+	// Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+	
+	// Release any cached data, images, etc. that aren't in use.
+}
+
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+	// There is only one section.
+	return 1;
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+	// Return the number of time zone names.
+	return [LYTexts count];
+}
+
+
+- (LYTextTableCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+	static NSString *MyIdentifier = @"LYTableCell";
+	
+	// Try to retrieve from the table view a now-unused cell with the given identifier.
+	LYTextTableCell *cell = (LYTextTableCell *)[tableView dequeueReusableCellWithIdentifier:MyIdentifier];
+	
+	// If no cell is available, create a new one using the given identifier.
+	if (cell == nil) {
+		// Use the default cell style.
+		cell = (LYTextTableCell *)[[[LYTextTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MyIdentifier] autorelease];
+	}
+	
+	// Set up the cell.
+	LYTextMessage *cellText = [LYTexts objectAtIndex:indexPath.row];
+	cell.textLabel.text = cellText.Text;
+	cell.LYText = cellText;
+	
+	return cell;
+}
+
+/*
+ To conform to Human Interface Guildelines, since selecting a row would have no effect (such as navigation), make sure that rows cannot be selected.
+ */
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+	ActiveText = [(LYTextTableCell *)[tableView cellForRowAtIndexPath:indexPath] LYText];
+	
+	return nil;
+}
+
 - (IBAction)sendMessage:(id)sender {
 	NSString *theText = [self.ActiveText Text];
 	MFMessageComposeViewController *controller = [[MFMessageComposeViewController alloc] initWithRootViewController:self];
@@ -290,12 +341,6 @@
 	[controller release];
 }
 
-- (void)didReceiveMemoryWarning {
-	// Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-	
-	// Release any cached data, images, etc. that aren't in use.
-}
 
 
 - (void)viewDidUnload {

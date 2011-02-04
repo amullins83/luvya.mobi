@@ -19,7 +19,6 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         // Initialization code.
-		self.LYText = [delegate getNextText];
     }
     return self;
 }
@@ -33,7 +32,7 @@
 	// Activate keyboard
 	// Set LYText = keyboard text
 	// Resign first responder
-	delegate.ActiveText = self.LYText;
+//	delegate.ActiveText = self.LYText;
 }
 
 

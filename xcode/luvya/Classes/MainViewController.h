@@ -9,6 +9,7 @@
 #import "FlipsideViewController.h"
 #import "LYTextMessage.h"
 #import "MessageUI/MessageUI.h"
+#import "LYTextTableCell.h"
 
 typedef enum {
 	sortLastUsed,
@@ -17,10 +18,8 @@ typedef enum {
 	sortAlpha
 }  LYSortRule ;
 
-@interface MainViewController : UIViewController <FlipsideViewControllerDelegate> {
+@interface MainViewController : UITableViewController <FlipsideViewControllerDelegate> {
 
-	
-	UITableViewController *LYTextTableController;
 	NSMutableArray *LYTexts;
 	uint CurrentLYTextsIndex;
 	LYTextMessage *ActiveText;
@@ -32,10 +31,8 @@ typedef enum {
 - (IBAction)sendMessage:(id)sender;
 - (IBAction)setSortOrder:(UISegmentedControl *)sender;
 - (IBAction)toggleAscending:(UIButton *)sender;
-- (LYTextMessage *)getNextText;
 
 @property (nonatomic, retain) NSArray *LYTexts;
-@property (nonatomic, retain) IBOutlet UITableViewController *LYTextTableController;
 @property (nonatomic, retain) LYTextMessage *ActiveText;
 
 @end

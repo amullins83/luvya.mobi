@@ -1,0 +1,12 @@
+/Users/amullins/Projects/luvya/LYTextTableViewController.m: In function '-[LYTextTableViewController tableView:numberOfRowsInSection:]':
+/Users/amullins/Projects/luvya/LYTextTableViewController.m:24: error: 'timeZoneNames' undeclared (first use in this function)
+/Users/amullins/Projects/luvya/LYTextTableViewController.m:24: error: (Each undeclared identifier is reported only once
+/Users/amullins/Projects/luvya/LYTextTableViewController.m:24: error: for each function it appears in.)
+/Users/amullins/Projects/luvya/LYTextTableViewController.m:25: warning: control reaches end of non-void function
+/Users/amullins/Projects/luvya/LYTextTableViewController.m: At top level:
+/Users/amullins/Projects/luvya/LYTextTableViewController.m:28: error: expected ')' before 'LYTextTableCell'
+/Users/amullins/Projects/luvya/LYTextTableViewController.m: In function '-[LYTextTableViewController tableView:cellForRowAtIndexPath:]':
+/Users/amullins/Projects/luvya/LYTextTableViewController.m:42: error: 'timeZoneNames' undeclared (first use in this function)
+/Users/amullins/Projects/luvya/LYTextTableViewController.m: In function '-[LYTextTableViewController sendMessage:]':
+/Users/amullins/Projects/luvya/LYTextTableViewController.m:58: error: 'MFMessageComposeViewController' undeclared (first use in this function)
+/Users/amullins/Projects/luvya/LYTextTableViewController.m:58: error: 'controller' undeclared (first use in this function)

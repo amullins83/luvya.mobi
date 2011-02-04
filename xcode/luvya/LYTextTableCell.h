@@ -8,14 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "LYTextMessage.h"
-#import "MainViewController.h"
 
 @interface LYTextTableCell : UITableViewCell {
 	LYTextMessage *LYText;
-	MainViewController *delegate;
+	UITableViewController *delegate;
 }
 
 @property (nonatomic, retain) IBOutlet LYTextMessage *LYText;
-@property (nonatomic, assign) IBOutlet MainViewController *delegate;
+@property (nonatomic, assign) IBOutlet UITableViewController *delegate;
 
 @end

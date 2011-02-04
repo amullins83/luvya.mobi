@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "LYTextMessage.h"
+#import "LYTextEditTableCell.h"
 
 @protocol FlipsideViewControllerDelegate;
 
@@ -15,14 +16,12 @@
 @interface FlipsideViewController : UIViewController {
 	id <FlipsideViewControllerDelegate> delegate;
 	bool doShowUserTexts;
-	UITableViewController *LYUserTextEditTableController;
 	NSArray *LYTexts;
 	uint CurrentLYTextsIndex;
 	LYTextMessage *ActiveText;
 }
 
 @property (nonatomic, assign) id <FlipsideViewControllerDelegate> delegate;
-@property (nonatomic, retain) IBOutlet UITableViewController *LYUserTextEditTableController;
 @property (nonatomic, retain) NSArray *LYTexts;
 @property (nonatomic, retain) LYTextMessage *ActiveText;
 
@@ -30,7 +29,6 @@
 - (IBAction)addUserText:(id)sender;
 - (IBAction)removeUserText:(id)sender;
 - (IBAction)toggleUserTexts:(id)sender;
-- (LYTextMessage *)getNextText;
 
 @end
 

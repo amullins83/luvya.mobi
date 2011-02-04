@@ -7,13 +7,11 @@
 //
 
 #import "FlipsideViewController.h"
-#import "LYTextMessage.h"
 
 
 @implementation FlipsideViewController
 
 @synthesize delegate;
-@synthesize LYUserTextEditTableController;
 @synthesize LYTexts;
 @synthesize ActiveText;
 
@@ -58,8 +56,6 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor viewFlipsideBackgroundColor];      
 	self.LYTexts = [[self textArrayFromPlist:@"TextDB.plist"] retain];
-	[LYUserTextEditTableController.view initWithFrame:CGRectMake(0, 44, 320, 369)];
-	[self.view addSubview:LYUserTextEditTableController.view];	
 	CurrentLYTextsIndex = 0;
 }
 
@@ -100,11 +96,48 @@
 	[textDB writeToFile:path atomically:NO];
 }
 
--(LYTextMessage *)getNextText {
-	return	[LYTexts objectAtIndex:CurrentLYTextsIndex++];
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+	// There is only one section.
+	return 1;
 }
 
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+	// Return the number of time zone names.
+	return [LYTexts count];
+}
+
+
+- (LYTextEditTableCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+	static NSString *MyIdentifier = @"LYUserEditTableCell";
+	
+	// Try to retrieve from the table view a now-unused cell with the given identifier.
+	LYTextEditTableCell *cell = (LYTextEditTableCell *)[tableView dequeueReusableCellWithIdentifier:MyIdentifier];
+	
+	// If no cell is available, create a new one using the given identifier.
+	if (cell == nil) {
+		// Use the default cell style.
+		cell = (LYTextEditTableCell *)[[[LYTextEditTableCell alloc] initWithStyle:UITableViewCellEditingStyleInsert reuseIdentifier:MyIdentifier] autorelease];
+	}
+	
+	// Set up the cell.
+	LYTextMessage *cellText = [LYTexts objectAtIndex:indexPath.row];
+	cell.textLabel.text = cellText.Text;
+	cell.LYText = cellText;
+	
+	return cell;
+}
+
+/*
+ To conform to Human Interface Guildelines, since selecting a row would have no effect (such as navigation), make sure that rows cannot be selected.
+ */
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+	ActiveText = [(LYTextEditTableCell *)[tableView cellForRowAtIndexPath:indexPath] LYText];
+	return nil;
+}
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -117,8 +150,7 @@
 
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
-	[self.LYUserTextEditTableController release];
-	self.LYUserTextEditTableController = nil;
+
 }
 
 
