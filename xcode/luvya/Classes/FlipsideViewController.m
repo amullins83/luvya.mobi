@@ -7,56 +7,120 @@
 //
 
 #import "FlipsideViewController.h"
-
+#import "Foundation/Foundation.h";
 
 @implementation FlipsideViewController
 
 @synthesize delegate;
 @synthesize LYTexts;
 @synthesize ActiveText;
+@synthesize textTableViewController;
+@synthesize fsSegmentedControl;
 
-- (NSArray *)textArrayFromPlist:(NSString *)pListName {
-	NSString *appPath = [[NSBundle mainBundle] bundlePath];
-	NSString *filePath = [appPath stringByAppendingPathComponent:pListName];
-	NSDictionary *textDB = [[NSDictionary dictionaryWithContentsOfFile:filePath] retain];
+-(BOOL)thisAscending { return thisAscending; }
+-(LYSortRule)thisRule { return thisRule; }
+-(void)setThisRule:(LYSortRule)rule { thisRule = rule; }
+-(void)setThisAscending:(BOOL)asc { thisAscending = asc; }
+
+
+-(void)sortTextArray{
 	
-	// Allocate result
-	NSArray *result = [[NSArray alloc] init];
-	NSArray *dictArray = [[NSArray alloc] init];
+	NSString *sortKey = [[NSString alloc] init];
+ 	
+	switch ((int)thisRule) {
+		case sortAlpha:
+			sortKey = @"Text";
+			break;
+		case sortLastUsed:
+			sortKey = @"LastUsed";
+			break;
+		case sortFirstUsed:
+			sortKey = @"FirstUsed";
+			break;
+		case sortNumUses:
+			sortKey = @"Uses";
+			break;
+			
+		default:
+			break;
+	}
+	
+	NSSortDescriptor *sortDesc = [[NSSortDescriptor alloc] initWithKey:sortKey ascending:thisAscending];
+	
+	[self.LYTexts sortUsingDescriptors:[NSArray arrayWithObject:sortDesc]];
+	
+	[sortDesc release];
+	[sortKey release];
+}
+
+- (void)textArrayFromPlist {
+	NSString *filePath = [NSString stringWithFormat:@"%@/Documents/TextDB.plist", NSHomeDirectory()]; 
+	
+	NSDictionary *textDB = [NSDictionary dictionaryWithContentsOfFile:filePath];
+	
+	id NumberRule = [textDB objectForKey:@"sortRule"];
+	
+	thisRule = (LYSortRule)[NumberRule intValue];
+	
+	NSArray *dictArray;
+	
 	// Check whether user/common list should be selected
-	if ([textDB objectForKey:@"showUserTexts"]) {
+	if ([[textDB objectForKey:@"showUserTexts"] boolValue]) {
 		//Populate array from UserTexts
 		dictArray = [NSArray arrayWithArray:[textDB objectForKey:@"UserTexts"]];
+		doShowUserTexts = TRUE;
 	}
 	else {
 		//Populate array from CommonTexts
 		dictArray = [NSArray arrayWithArray:[textDB objectForKey:@"CommonTexts"]];
+		doShowUserTexts = FALSE;
+	}
+	
+	int arrLength = [LYTexts count];
+	for(int i = 0; i < arrLength; i++)
+	{
+		[LYTexts removeObjectAtIndex:0];
 	}
 	
 	for(int i = 0; i < [dictArray count]; i++)
 	{
-		// allocate new LYTextMessage
-		// init new LYTextMessage from plist table
-		LYTextMessage *newText = [[[LYTextMessage alloc]
-								   initWithID:(NSUInteger *)[[dictArray objectAtIndex:i] objectForKey:@"TextID"]
-								   numUses:(NSUInteger *)[[dictArray objectAtIndex:i] objectForKey:@"Uses"]
-								   lastUsed:[[dictArray objectAtIndex:i] objectForKey:@"LastUsed"]
-								   firstUsed:[[dictArray objectAtIndex:i] objectForKey:@"FirstUsed"]
-								   text:[[dictArray objectAtIndex:i] objectForKey:@"Text"]] retain];
-		
 		// Append LYTextMessage to result
-		[result arrayByAddingObject:newText];						  
+		[self.LYTexts 
+		 insertObject:
+		 [[LYTextMessage alloc]
+		  initWithID:[[[dictArray objectAtIndex:i] objectForKey:@"TextID"] intValue]
+		  numUses:[[[dictArray objectAtIndex:i] objectForKey:@"Uses"] intValue]
+		  lastUsed:[[dictArray objectAtIndex:i] objectForKey:@"LastUsed"]
+		  firstUsed:[[dictArray objectAtIndex:i] objectForKey:@"FirstUsed"]
+		  text:[[dictArray objectAtIndex:i] objectForKey:@"Text"]]
+		 atIndex:i];						  
 	}
 	
-	// Return result
-	return result;
+	
+	thisAscending = [[textDB objectForKey:@"sortAscending"] boolValue];
+	
+	// Sort LYTexts
+	[self sortTextArray];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor viewFlipsideBackgroundColor];      
-	self.LYTexts = [[self textArrayFromPlist:@"TextDB.plist"] retain];
-	CurrentLYTextsIndex = 0;
+	self.LYTexts = [[NSMutableArray alloc] init];
+    
+	self.view.backgroundColor = [UIColor viewFlipsideBackgroundColor];      
+	[self textArrayFromPlist];
+	
+	[textTableViewController.view initWithFrame:CGRectMake(0, 44, 320, 325)];
+	
+	[self.view addSubview:textTableViewController.view];
+	
+	if (doShowUserTexts) {
+		[fsSegmentedControl setSelectedSegmentIndex:1];
+	}
+	else {
+		[fsSegmentedControl setSelectedSegmentIndex:0];
+	}
+
 }
 
 
@@ -66,24 +130,40 @@
 }
 
 - (IBAction)toggleUserTexts:(id)sender {
-	doShowUserTexts = !doShowUserTexts;
+	doShowUserTexts = (BOOL)[fsSegmentedControl selectedSegmentIndex];
+	
+	NSString *filePath = [NSString stringWithFormat:@"%@/Documents/TextDB.plist", NSHomeDirectory()]; 
+	NSMutableDictionary *textDB = [NSMutableDictionary dictionaryWithContentsOfFile:filePath];
+	
+	NSNumber *doShowUT = [[NSNumber alloc] initWithBool:doShowUserTexts];
+	
+	[textDB setObject:doShowUT forKey:@"showUserTexts"];
+	
+	[textDB writeToFile:filePath atomically:YES];
+	
+	[doShowUT release];
+	
+	[self textArrayFromPlist];
+	[(UITableView *)textTableViewController.view reloadData];
 }
 
 - (IBAction)addUserText:(id)sender {
-	NSString *path = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"TextDB.plist"];
-	NSMutableDictionary *textDB = [NSMutableDictionary dictionaryWithContentsOfFile:path];
+	NSString *filePath = [NSString stringWithFormat:@"%@/Documents/TextDB.plist", NSHomeDirectory()]; 
+	NSMutableDictionary *textDB = [NSMutableDictionary dictionaryWithContentsOfFile:filePath];
     	
 	NSDictionary *newText = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:(id)ActiveText.TextID, (id)ActiveText.Uses, ActiveText.LastUsed, ActiveText.FirstUsed, ActiveText.Text, nil] forKeys:[NSArray arrayWithObjects:@"TextID", @"Uses", @"LastUsed", @"FirstUsed", @"Text", nil]]; 
     
 	[textDB setObject:[[textDB objectForKey:@"UserTexts"] arrayByAddingObject:newText] forKey:@"UserTexts"];
 	
-	[textDB writeToFile:path atomically:NO];
+	[textDB writeToFile:filePath atomically:YES];
+	[self textArrayFromPlist];
+	[(UITableView *)textTableViewController.view reloadData];
 }
 
 - (IBAction)removeUserText:(id)sender {
-	NSString *path = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"TextDB.plist"];
-	NSMutableDictionary *textDB = [NSMutableDictionary dictionaryWithContentsOfFile:path];
-	NSUInteger *TextIDtoRemove = ActiveText.TextID;
+	NSString *filePath = [NSString stringWithFormat:@"%@/Documents/TextDB.plist", NSHomeDirectory()]; 
+	NSMutableDictionary *textDB = [NSMutableDictionary dictionaryWithContentsOfFile:filePath];
+	int TextIDtoRemove = ActiveText.TextID;
 	NSArray *oldArray = [textDB objectForKey:@"UserTexts"];
 	NSMutableArray *shorterArray = [[NSMutableArray alloc] init];
 	for (int i = 0; i < [oldArray count]; i++) {
@@ -93,51 +173,11 @@
 	}
 	
 	[textDB setObject:shorterArray forKey:@"UserTexts"];
-	[textDB writeToFile:path atomically:NO];
+	[textDB writeToFile:filePath atomically:YES];
+	[self textArrayFromPlist];
+	[(UITableView *)textTableViewController.view reloadData];
 }
 
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-	// There is only one section.
-	return 1;
-}
-
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	// Return the number of time zone names.
-	return [LYTexts count];
-}
-
-
-- (LYTextEditTableCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	
-	static NSString *MyIdentifier = @"LYUserEditTableCell";
-	
-	// Try to retrieve from the table view a now-unused cell with the given identifier.
-	LYTextEditTableCell *cell = (LYTextEditTableCell *)[tableView dequeueReusableCellWithIdentifier:MyIdentifier];
-	
-	// If no cell is available, create a new one using the given identifier.
-	if (cell == nil) {
-		// Use the default cell style.
-		cell = (LYTextEditTableCell *)[[[LYTextEditTableCell alloc] initWithStyle:UITableViewCellEditingStyleInsert reuseIdentifier:MyIdentifier] autorelease];
-	}
-	
-	// Set up the cell.
-	LYTextMessage *cellText = [LYTexts objectAtIndex:indexPath.row];
-	cell.textLabel.text = cellText.Text;
-	cell.LYText = cellText;
-	
-	return cell;
-}
-
-/*
- To conform to Human Interface Guildelines, since selecting a row would have no effect (such as navigation), make sure that rows cannot be selected.
- */
-- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	
-	ActiveText = [(LYTextEditTableCell *)[tableView cellForRowAtIndexPath:indexPath] LYText];
-	return nil;
-}
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -150,7 +190,7 @@
 
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
- 
+	[self.LYTexts release];
 }
 
 

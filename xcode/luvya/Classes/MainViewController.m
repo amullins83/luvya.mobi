@@ -12,179 +12,53 @@
 @implementation MainViewController
 @synthesize LYTexts;
 @synthesize ActiveText;
+@synthesize textTableController;
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-
-
-
-
-- (void)sortByLastUsedTextArrayAscending:(NSMutableArray *)texts {
-	int i, j, minIndex;
-	for (i = 0; i < [texts count] - 1; i++) {
-		minIndex = i;
-		for (j = i + 1; j < [texts count]; j++) {
-			if ([[texts objectAtIndex:j] LastUsed] < [[texts objectAtIndex:minIndex] LastUsed]) {
-				minIndex = j;
-			}
-		}
-		[texts insertObject:[texts objectAtIndex:minIndex] atIndex:i];
-		[texts removeObjectAtIndex:minIndex];
-	}
-}
-
-- (void)sortByFirstUsedTextArrayAscending:(NSMutableArray *)texts {
-	int i, j, minIndex;
-	for (i = 0; i < [texts count] - 1; i++) {
-		minIndex = i;
-		for (j = i + 1; j < [texts count]; j++) {
-			if ([[texts objectAtIndex:j] FirstUsed] < [[texts objectAtIndex:minIndex] FirstUsed]) {
-				minIndex = j;
-			}
-		}
-		[texts insertObject:[texts objectAtIndex:minIndex] atIndex:i];
-		[texts removeObjectAtIndex:minIndex];
-	}
+-(void)sortTextArray{
 	
-}
-
-- (void)sortByNumUsesTextArrayAscending:(NSMutableArray *)texts {
-	int i, j, minIndex;
-	for (i = 0; i < [texts count] - 1; i++) {
-		minIndex = i;
-		for (j = i + 1; j < [texts count]; j++) {
-			if ([[texts objectAtIndex:j] Uses] < [[texts objectAtIndex:minIndex] Uses]) {
-				minIndex = j;
-			}
-		}
-		[texts insertObject:[texts objectAtIndex:minIndex] atIndex:i];
-		[texts removeObjectAtIndex:minIndex];
-	}
-}
-
-- (void)sortByAlphaTextArrayAscending:(NSMutableArray *)texts {
-	int i, j, minIndex;
-	for (i = 0; i < [texts count] - 1; i++) {
-		minIndex = i;
-		for (j = i + 1; j < [texts count]; j++) {
-			if ([[texts objectAtIndex:j] Text] < [[texts objectAtIndex:minIndex] Text]) {
-				minIndex = j;
-			}
-		}
-		[texts insertObject:[texts objectAtIndex:minIndex] atIndex:i];
-		[texts removeObjectAtIndex:minIndex];
-	}
-	
-}
-
-- (void)sortByLastUsedTextArrayDescending:(NSMutableArray *)texts {
-	int i, j, maxIndex;
-	for (i = 0; i < [texts count] - 1; i++) {
-		maxIndex = i;
-		for (j = i + 1; j < [texts count]; j++) {
-			if ([[texts objectAtIndex:j] LastUsed] > [[texts objectAtIndex:maxIndex] LastUsed]) {
-				maxIndex = j;
-			}
-		}
-		[texts insertObject:[texts objectAtIndex:maxIndex] atIndex:i];
-		[texts removeObjectAtIndex:maxIndex];
-	}	
-}
-
-- (void)sortByFirstUsedTextArrayDescending:(NSMutableArray *)texts {
-	int i, j, maxIndex;
-	for (i = 0; i < [texts count] - 1; i++) {
-		maxIndex = i;
-		for (j = i + 1; j < [texts count]; j++) {
-			if ([[texts objectAtIndex:j] FirstUsed] > [[texts objectAtIndex:maxIndex] FirstUsed]) {
-				maxIndex = j;
-			}
-		}
-		[texts insertObject:[texts objectAtIndex:maxIndex] atIndex:i];
-		[texts removeObjectAtIndex:maxIndex];
-	}
-}
-
-- (void)sortByNumUsesTextArrayDescending:(NSMutableArray *)texts {
-	int i, j, maxIndex;
-	for (i = 0; i < [texts count] - 1; i++) {
-		maxIndex = i;
-		for (j = i + 1; j < [texts count]; j++) {
-			if ([[texts objectAtIndex:j] Uses] > [[texts objectAtIndex:maxIndex] Uses]) {
-				maxIndex = j;
-			}
-		}
-		[texts insertObject:[texts objectAtIndex:maxIndex] atIndex:i];
-		[texts removeObjectAtIndex:maxIndex];
-	}	
-}
-
-- (void)sortByAlphaTextArrayDescending:(NSMutableArray *)texts {
-	int i, j, maxIndex;
-	for (i = 0; i < [texts count] - 1; i++) {
-		maxIndex = i;
-		for (j = i + 1; j < [texts count]; j++) {
-			if ([[texts objectAtIndex:j] Text] > [[texts objectAtIndex:maxIndex] Text]) {
-				maxIndex = j;
-			}
-		}
-		[texts insertObject:[texts objectAtIndex:maxIndex] atIndex:i];
-		[texts removeObjectAtIndex:maxIndex];
-	}
-}
-
-
-- (void)sortTextArray:(NSMutableArray *)texts by:(LYSortRule *)rule ascending:(BOOL *)asc {
-	thisRule = rule;
-	switch ((int)&rule) {
+	NSString *sortKey = [[NSString alloc] init];
+ 	
+	switch ((int)thisRule) {
 		case sortAlpha:
-			if (asc) {
-				[self sortByAlphaTextArrayAscending:texts];
-			}
-			else {
-				[self sortByAlphaTextArrayDescending:texts];
-			}
+			sortKey = @"Text";
 			break;
 		case sortLastUsed:
-			if (asc) {
-				[self sortByLastUsedTextArrayAscending:texts];
-			}
-			else {
-				[self sortByLastUsedTextArrayDescending:texts];
-			}
+			sortKey = @"LastUsed";
 			break;
 		case sortFirstUsed:
-			if (asc) {
-				[self sortByFirstUsedTextArrayAscending:texts];
-			}
-			else {
-				[self sortByFirstUsedTextArrayDescending:texts];
-			}
+			sortKey = @"FirstUsed";
 			break;
 		case sortNumUses:
-			if (asc) {
-				[self sortByNumUsesTextArrayAscending:texts];
-			}
-			else {
-				[self sortByNumUsesTextArrayDescending:texts];
-			}
+			sortKey = @"Uses";
 			break;
+			
 		default:
 			break;
 	}
+	
+	NSSortDescriptor *sortDesc = [[NSSortDescriptor alloc] initWithKey:sortKey ascending:thisAscending];
+	
+	[self.LYTexts sortUsingDescriptors:[NSArray arrayWithObject:sortDesc]];
+	
+	[sortDesc release];
+	[sortKey release];
 }
 
 
+- (void)textArrayFromPlist {
+	NSString *filePath = [NSString stringWithFormat:@"%@/Documents/TextDB.plist", NSHomeDirectory()]; 
 
-- (NSMutableArray *)textArrayFromPlist:(NSString *)pListName {
-	NSString *appPath = [[NSBundle mainBundle] bundlePath];
-	NSString *filePath = [appPath stringByAppendingPathComponent:pListName];
-	NSDictionary *textDB = [[NSDictionary dictionaryWithContentsOfFile:filePath] retain];
-	thisRule = (LYSortRule *)[textDB objectForKey:@"sortRule"];
-	// Allocate result
-	NSMutableArray *resultArray = [[NSMutableArray alloc] init];
-	NSArray *dictArray = [[NSArray alloc] init];
+	NSDictionary *textDB = [NSDictionary dictionaryWithContentsOfFile:filePath];
+
+	id NumberRule = [textDB objectForKey:@"sortRule"];
+	
+	thisRule = (LYSortRule)[NumberRule intValue];
+
+	NSArray *dictArray;
+	
 	// Check whether user/common list should be selected
-	if ([textDB objectForKey:@"showUserTexts"]) {
+	if ([[textDB objectForKey:@"showUserTexts"] boolValue]) {
 		//Populate array from UserTexts
 		dictArray = [NSArray arrayWithArray:[textDB objectForKey:@"UserTexts"]];
 	}
@@ -195,46 +69,41 @@
 	
 	for(int i = 0; i < [dictArray count]; i++)
 	{
-		// allocate new LYTextMessage
-		// init new LYTextMessage from plist table
-		NSUInteger *newTextID = malloc(sizeof(NSUInteger));
-		NSUInteger *newUses = malloc(sizeof(NSUInteger));
-		newTextID = (NSUInteger *)[[dictArray objectAtIndex:i] objectForKey:@"TextID"];
-		newUses = (NSUInteger *)[[dictArray objectAtIndex:i] objectForKey:@"Uses"];
-		LYTextMessage *newText = [[[LYTextMessage alloc]
-								   initWithID:newTextID
-								   numUses:newUses
-								   lastUsed:[[dictArray objectAtIndex:i] objectForKey:@"LastUsed"]
-								   firstUsed:[[dictArray objectAtIndex:i] objectForKey:@"FirstUsed"]
-								   text:[[dictArray objectAtIndex:i] objectForKey:@"Text"]] retain];
-		
 		// Append LYTextMessage to result
-		[resultArray insertObject:newText atIndex:i];						  
+		[self.LYTexts 
+					  insertObject:
+									[[LYTextMessage alloc]
+										initWithID:[[[dictArray objectAtIndex:i] objectForKey:@"TextID"] intValue]
+										numUses:[[[dictArray objectAtIndex:i] objectForKey:@"Uses"] intValue]
+										lastUsed:[[dictArray objectAtIndex:i] objectForKey:@"LastUsed"]
+										firstUsed:[[dictArray objectAtIndex:i] objectForKey:@"FirstUsed"]
+										text:[[dictArray objectAtIndex:i] objectForKey:@"Text"]]
+					  atIndex:i];						  
 	}
+
 	
-	[self sortTextArray:resultArray by:thisRule ascending:(BOOL *)[textDB objectForKey:@"sortAscending"]];
+	thisAscending = [[textDB objectForKey:@"sortAscending"] boolValue];
 	
-	// Return result
-	return resultArray;
+	// Sort LYTexts
+	[self sortTextArray];
 }
 
+
 -(IBAction)setSortOrder:(UISegmentedControl *)sender {
-	thisRule = (LYSortRule *)[sender selectedSegmentIndex];
-	[self sortTextArray:LYTexts by:thisRule ascending:thisAscending];
-	CurrentLYTextsIndex = 0;
+	thisRule = (LYSortRule)[sender selectedSegmentIndex];
+	[self sortTextArray];
+
 //Reload the table cells in the new order
-	//[LYTableVC loadView];
+	[(UITableView *)textTableController.view reloadData];
 }
 
 -(IBAction)toggleAscending:(UIButton *)sender {
-    *thisAscending = !*thisAscending;
-	[self sortTextArray:LYTexts by:thisRule ascending:thisAscending];
-	CurrentLYTextsIndex = 0;
-	//Reload the table cells in the new order
-	//[LYTableVC loadView];
+    thisAscending = !thisAscending;
+	[self sortTextArray];
+	[(UITableView *)textTableController.view reloadData];
 	UIImage *arrowImg;
 	
-	if (*thisAscending) {
+	if (thisAscending) {
 		arrowImg = [UIImage imageWithContentsOfFile:[[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"ArrowDownTransparent.png"]];
 	}
 	else {
@@ -247,17 +116,13 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	thisAscending = malloc(sizeof(BOOL));
-	thisRule = malloc(sizeof(LYSortRule));
+	self.LYTexts = [[[NSMutableArray alloc] init] retain];
 
-	self.LYTexts = [[self textArrayFromPlist:@"TextDB.plist"] retain];
-
-	CurrentLYTextsIndex = 0;
+	[self textArrayFromPlist];
+	[(UITableView *)textTableController.view reloadData];
+	[self.view addSubview:textTableController.view];
 }								  
 								  
--(LYTextMessage *)getNextText {
-	return	[LYTexts objectAtIndex:CurrentLYTextsIndex++];
-}
 
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller {
     
@@ -287,58 +152,22 @@
 }
 
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-	// There is only one section.
-	return 1;
-}
-
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	// Return the number of time zone names.
-	return [LYTexts count];
-}
-
-
-- (LYTextTableCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	
-	static NSString *MyIdentifier = @"LYTableCell";
-	
-	// Try to retrieve from the table view a now-unused cell with the given identifier.
-	LYTextTableCell *cell = (LYTextTableCell *)[tableView dequeueReusableCellWithIdentifier:MyIdentifier];
-	
-	// If no cell is available, create a new one using the given identifier.
-	if (cell == nil) {
-		// Use the default cell style.
-		cell = (LYTextTableCell *)[[[LYTextTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MyIdentifier] autorelease];
-	}
-	
-	// Set up the cell.
-	LYTextMessage *cellText = [LYTexts objectAtIndex:indexPath.row];
-	cell.textLabel.text = cellText.Text;
-	cell.LYText = cellText;
-	
-	return cell;
-}
-
-/*
- To conform to Human Interface Guildelines, since selecting a row would have no effect (such as navigation), make sure that rows cannot be selected.
- */
-- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	
-	ActiveText = [(LYTextTableCell *)[tableView cellForRowAtIndexPath:indexPath] LYText];
-	
-	return nil;
-}
-
 - (IBAction)sendMessage:(id)sender {
 	NSString *theText = [self.ActiveText Text];
-	MFMessageComposeViewController *controller = [[MFMessageComposeViewController alloc] initWithRootViewController:self];
-	controller.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-	controller.body = theText;
+	MFMessageComposeViewController *picker = [[MFMessageComposeViewController alloc] init];
+	picker.messageComposeDelegate = self;
+
+	picker.body = theText;
 	
-	[self presentModalViewController:controller animated:YES];
+	[self presentModalViewController:picker animated:YES];
+
+	[picker release];
 	
-	[controller release];
+}
+
+- (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result {
+		// Dismiss controller
+	[self dismissModalViewControllerAnimated:YES];
 }
 
 
@@ -346,6 +175,7 @@
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
+	[LYTexts release];
 }
 
 

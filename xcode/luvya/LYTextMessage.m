@@ -15,17 +15,21 @@
 @synthesize FirstUsed;
 @synthesize Text;
 
+-(int)TextID { return _TextID; }
+-(int)Uses { return _Uses; }
+
+-(void)setTextID:(int)tid { _TextID = tid; }
+-(void)setUses:(int)uses { _Uses = uses; }
+
 #pragma mark -
 #pragma mark Text Initializers
 
 //-initWithID:numUses:lastUsed:firstUsed:text:
 
--(LYTextMessage *)initWithID:(NSUInteger *)txtId numUses:(NSUInteger *)uses lastUsed:(NSDate *)last firstUsed:(NSDate *)first text:(NSString *)msg {
+-(LYTextMessage *)initWithID:(int)txtId numUses:(int)uses lastUsed:(NSDate *)last firstUsed:(NSDate *)first text:(NSString *)msg {
 	[super init];
-	TextID = malloc(sizeof(NSUInteger));
-	Uses = malloc(sizeof(NSUInteger));
-	*TextID = *txtId;
-	*Uses = *uses;
+	_TextID = txtId;
+	_Uses = uses;
 	LastUsed = [[[NSDate alloc] initWithTimeInterval:0 sinceDate:last] retain];
 	FirstUsed = [[[NSDate alloc] initWithTimeInterval:0 sinceDate:first] retain];
 	Text = [[[NSString alloc] initWithString:msg] retain];
@@ -35,10 +39,8 @@
 -(LYTextMessage *)initWithText:(NSString *)msg {
 	[super init];
 	Text = [[[NSString alloc] initWithString:msg] retain];
-	TextID = malloc(sizeof(NSUInteger));
-					*TextID = 0;
-	Uses = malloc(sizeof(NSUInteger));
-				  *Uses = 0;
+	_TextID = 0;
+	_Uses = 0;
 	LastUsed = NULL;
 	FirstUsed = NULL;
 	return self;
@@ -46,23 +48,13 @@
 
 -(LYTextMessage *)initWithMessage:(LYTextMessage *)other {
 	self = [super init];
-	TextID = malloc(sizeof(NSUInteger));
-	Uses = malloc(sizeof(NSUInteger));
-	*TextID = *[other TextID];
-	*Uses = *[other Uses];
+	_TextID = other.TextID;
+	_Uses = other.Uses;
 	LastUsed = [[[NSDate alloc] initWithTimeInterval:0 sinceDate:[other LastUsed]] retain];
 	FirstUsed = [[[NSDate alloc] initWithTimeInterval:0 sinceDate:[other FirstUsed]] retain];
 	Text = [[[NSString alloc] initWithString:[other Text]] retain];	
 	return self;
 }
-
--(NSUInteger *)TextID { return [self TextID]; }
--(NSUInteger *)Uses   { return [self Uses]; }
-
--(void)setTextID:(NSUInteger *)newID { *TextID = *newID; }
--(void)setUses:(NSUInteger *)newUses { *Uses = *newUses; }
-
-
 
 -(void) dealloc {
 	[LastUsed release];

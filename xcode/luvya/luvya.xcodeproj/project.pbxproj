@@ -14,7 +14,6 @@
 		273E75F212F98F9E00E19B57 /* LYTextMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 273E75F112F98F9E00E19B57 /* LYTextMessage.m */; };
 		273E762F12F9E02E00E19B57 /* LYTextTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 273E762E12F9E02E00E19B57 /* LYTextTableCell.m */; };
 		273E768612F9E97400E19B57 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 273E768512F9E97400E19B57 /* MessageUI.framework */; };
-		273E769212F9EEB800E19B57 /* TextDB.plist in Resources */ = {isa = PBXBuildFile; fileRef = 273E769112F9EEB800E19B57 /* TextDB.plist */; };
 		273E769512FA09D500E19B57 /* LYTextEditTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 273E769412FA09D500E19B57 /* LYTextEditTableCell.m */; };
 		273E77A912FB304000E19B57 /* nIconTransparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 273E77A512FB304000E19B57 /* nIconTransparent.png */; };
 		273E77AA12FB304000E19B57 /* LastUsedIconTransparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 273E77A612FB304000E19B57 /* LastUsedIconTransparent.png */; };
@@ -27,6 +26,8 @@
 		273E77C612FB4AED00E19B57 /* GearShape.png in Resources */ = {isa = PBXBuildFile; fileRef = 273E77C512FB4AED00E19B57 /* GearShape.png */; };
 		273E798512FC6B8800E19B57 /* GearShapeLighter.png in Resources */ = {isa = PBXBuildFile; fileRef = 273E798412FC6B8800E19B57 /* GearShapeLighter.png */; };
 		273E79C212FCA8DC00E19B57 /* LYicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 273E79C112FCA8DC00E19B57 /* LYicon.png */; };
+		273E79D812FCD9A400E19B57 /* LYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 273E79D712FCD9A400E19B57 /* LYTableViewController.m */; };
+		273E79DB12FCF7D900E19B57 /* LYEditTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 273E79DA12FCF7D900E19B57 /* LYEditTableViewController.m */; };
 		280E754D0DD40C5E005A515E /* FlipsideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754A0DD40C5E005A515E /* FlipsideView.xib */; };
 		280E754E0DD40C5E005A515E /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754B0DD40C5E005A515E /* MainView.xib */; };
 		280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754C0DD40C5E005A515E /* MainWindow.xib */; };
@@ -46,7 +47,6 @@
 		273E762D12F9E02E00E19B57 /* LYTextTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYTextTableCell.h; sourceTree = "<group>"; };
 		273E762E12F9E02E00E19B57 /* LYTextTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYTextTableCell.m; sourceTree = "<group>"; };
 		273E768512F9E97400E19B57 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		273E769112F9EEB800E19B57 /* TextDB.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TextDB.plist; sourceTree = "<group>"; };
 		273E769312FA09D500E19B57 /* LYTextEditTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYTextEditTableCell.h; sourceTree = "<group>"; };
 		273E769412FA09D500E19B57 /* LYTextEditTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYTextEditTableCell.m; sourceTree = "<group>"; };
 		273E77A512FB304000E19B57 /* nIconTransparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nIconTransparent.png; sourceTree = "<group>"; };
@@ -60,6 +60,10 @@
 		273E77C512FB4AED00E19B57 /* GearShape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GearShape.png; sourceTree = "<group>"; };
 		273E798412FC6B8800E19B57 /* GearShapeLighter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GearShapeLighter.png; sourceTree = "<group>"; };
 		273E79C112FCA8DC00E19B57 /* LYicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LYicon.png; sourceTree = "<group>"; };
+		273E79D612FCD9A400E19B57 /* LYTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYTableViewController.h; sourceTree = "<group>"; };
+		273E79D712FCD9A400E19B57 /* LYTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYTableViewController.m; sourceTree = "<group>"; };
+		273E79D912FCF7D900E19B57 /* LYEditTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYEditTableViewController.h; sourceTree = "<group>"; };
+		273E79DA12FCF7D900E19B57 /* LYEditTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYEditTableViewController.m; sourceTree = "<group>"; };
 		280E754A0DD40C5E005A515E /* FlipsideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlipsideView.xib; sourceTree = "<group>"; };
 		280E754B0DD40C5E005A515E /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		280E754C0DD40C5E005A515E /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 			children = (
 				289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */,
 				289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */,
+				273E79D912FCF7D900E19B57 /* LYEditTableViewController.h */,
+				273E79DA12FCF7D900E19B57 /* LYEditTableViewController.m */,
 			);
 			name = "Flipside View";
 			sourceTree = "<group>";
@@ -120,6 +126,8 @@
 			children = (
 				289233A80DB2D0DB0083E9F9 /* MainViewController.h */,
 				289233A90DB2D0DB0083E9F9 /* MainViewController.m */,
+				273E79D612FCD9A400E19B57 /* LYTableViewController.h */,
+				273E79D712FCD9A400E19B57 /* LYTableViewController.m */,
 			);
 			name = "Main View";
 			sourceTree = "<group>";
@@ -171,7 +179,6 @@
 				280E754B0DD40C5E005A515E /* MainView.xib */,
 				280E754C0DD40C5E005A515E /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* luvya-Info.plist */,
-				273E769112F9EEB800E19B57 /* TextDB.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -243,7 +250,6 @@
 				280E754D0DD40C5E005A515E /* FlipsideView.xib in Resources */,
 				280E754E0DD40C5E005A515E /* MainView.xib in Resources */,
 				280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */,
-				273E769212F9EEB800E19B57 /* TextDB.plist in Resources */,
 				273E77A912FB304000E19B57 /* nIconTransparent.png in Resources */,
 				273E77AA12FB304000E19B57 /* LastUsedIconTransparent.png in Resources */,
 				273E77AB12FB304000E19B57 /* FirstUsedIconTransparent.png in Resources */,
@@ -272,6 +278,8 @@
 				273E75F212F98F9E00E19B57 /* LYTextMessage.m in Sources */,
 				273E762F12F9E02E00E19B57 /* LYTextTableCell.m in Sources */,
 				273E769512FA09D500E19B57 /* LYTextEditTableCell.m in Sources */,
+				273E79D812FCD9A400E19B57 /* LYTableViewController.m in Sources */,
+				273E79DB12FCF7D900E19B57 /* LYEditTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -270,19 +270,16 @@
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
-								<string>1DF5F4DF0D08C38300B7A737</string>
-								<string>273E75D512F8EBCD00E19B57</string>
-								<string>273E768512F9E97400E19B57</string>
-								<string>273E768812F9E97400E19B57</string>
-								<string>19C28FACFE9D520D11CA2CBB</string>
+								<string>1D30AB110D05D00D00671497</string>
+								<string>273E75D712F8EBCD00E19B57</string>
 								<string>1C37FAAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>8</integer>
-									<integer>6</integer>
+									<integer>5</integer>
+									<integer>3</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -306,7 +303,7 @@
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>131 141 1306 641 0 0 1440 878 </string>
+						<string>124 97 1306 641 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -324,7 +321,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>FlipsideViewController.m</string>
+								<string>MainViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -332,36 +329,42 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>FlipsideViewController.m</string>
+										<string>MainViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>273E79C012FC9A4300E19B57</string>
+										<string>273E7C9612FE1D2600E19B57</string>
 										<key>history</key>
 										<array>
 											<string>273E76AE12FA20BD00E19B57</string>
-											<string>273E76B512FA20BD00E19B57</string>
 											<string>273E76B712FA20BD00E19B57</string>
 											<string>273E76BB12FA20BD00E19B57</string>
 											<string>273E774012FB0C2200E19B57</string>
-											<string>273E774212FB0C2200E19B57</string>
 											<string>273E774312FB0C2200E19B57</string>
-											<string>273E778A12FB1BDD00E19B57</string>
 											<string>273E785D12FB74E200E19B57</string>
 											<string>273E78A312FB87FF00E19B57</string>
 											<string>273E78A412FB87FF00E19B57</string>
-											<string>273E79B312FC9A4300E19B57</string>
-											<string>273E79B412FC9A4300E19B57</string>
-											<string>273E79B512FC9A4300E19B57</string>
-											<string>273E79B612FC9A4300E19B57</string>
-											<string>273E79B712FC9A4300E19B57</string>
-											<string>273E79B812FC9A4300E19B57</string>
-											<string>273E79B912FC9A4300E19B57</string>
-											<string>273E79BA12FC9A4300E19B57</string>
-											<string>273E79BB12FC9A4300E19B57</string>
-											<string>273E79BD12FC9A4300E19B57</string>
-											<string>273E79BE12FC9A4300E19B57</string>
-											<string>273E79BF12FC9A4300E19B57</string>
+											<string>273E79CE12FCB42700E19B57</string>
+											<string>273E7A0112FD086C00E19B57</string>
+											<string>273E7A0212FD086C00E19B57</string>
+											<string>273E7A9E12FD1EE900E19B57</string>
+											<string>273E7A9F12FD1EE900E19B57</string>
+											<string>273E7B1F12FDBDED00E19B57</string>
+											<string>273E7B3E12FDD29400E19B57</string>
+											<string>273E7BD412FDF89F00E19B57</string>
+											<string>273E7BD512FDF89F00E19B57</string>
+											<string>273E7BD612FDF89F00E19B57</string>
+											<string>273E7BD712FDF89F00E19B57</string>
+											<string>273E7BD812FDF89F00E19B57</string>
+											<string>273E7BDB12FDF89F00E19B57</string>
+											<string>273E7BED12FDF99600E19B57</string>
+											<string>273E7BF712FDF9DC00E19B57</string>
+											<string>273E7C0812FDFC9200E19B57</string>
+											<string>273E7C2112FDFF1000E19B57</string>
+											<string>273E7C2B12FE015600E19B57</string>
+											<string>273E7C5512FE061800E19B57</string>
+											<string>273E7C9412FE1D2600E19B57</string>
+											<string>273E7C9512FE1D2600E19B57</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -375,7 +378,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1098, 518}}</string>
 								<key>RubberWindowFrame</key>
-								<string>131 141 1306 641 0 0 1440 878 </string>
+								<string>124 97 1306 641 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -395,7 +398,7 @@
 								<key>Frame</key>
 								<string>{{0, 523}, {1098, 77}}</string>
 								<key>RubberWindowFrame</key>
-								<string>131 141 1306 641 0 0 1440 878 </string>
+								<string>124 97 1306 641 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -559,17 +562,18 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>273E7A4912FD100800E19B57</string>
 		<string>273E785912FB74C300E19B57</string>
 		<string>273E782612FB6AEF00E19B57</string>
-		<string>273E781112FB690400E19B57</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>273E75EB12F8FA1600E19B57</string>
 		<string>1C0AD2AF069F1E9B00FABCE6</string>
+		<string>273E781112FB690400E19B57</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/amullins/Projects/luvya/luvya.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>131 141 1306 641 0 0 1440 878 </string>
+	<string>124 97 1306 641 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -590,7 +594,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MainViewController.m</string>
+								<string>FlipsideViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>

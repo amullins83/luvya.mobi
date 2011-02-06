@@ -10,21 +10,18 @@
 #import "LYTextMessage.h"
 #import "MessageUI/MessageUI.h"
 #import "LYTextTableCell.h"
+#import "LYTableViewController.h"
 
-typedef enum {
-	sortLastUsed,
-	sortFirstUsed,
-	sortNumUses,
-	sortAlpha
-}  LYSortRule ;
 
-@interface MainViewController : UITableViewController <FlipsideViewControllerDelegate> {
+
+@interface MainViewController : UIViewController <FlipsideViewControllerDelegate, MFMessageComposeViewControllerDelegate> {
 
 	NSMutableArray *LYTexts;
 	uint CurrentLYTextsIndex;
 	LYTextMessage *ActiveText;
-	LYSortRule *thisRule;
-	BOOL *thisAscending;
+	LYSortRule thisRule;
+	BOOL thisAscending;
+	LYTableViewController *textTableController;
 }
 
 - (IBAction)showInfo:(id)sender;
@@ -32,7 +29,8 @@ typedef enum {
 - (IBAction)setSortOrder:(UISegmentedControl *)sender;
 - (IBAction)toggleAscending:(UIButton *)sender;
 
-@property (nonatomic, retain) NSArray *LYTexts;
+@property (nonatomic, retain) NSMutableArray *LYTexts;
 @property (nonatomic, retain) LYTextMessage *ActiveText;
+@property (nonatomic, retain) IBOutlet LYTableViewController *textTableController;
 
 @end

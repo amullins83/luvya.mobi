@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "LYTextMessage.h"
-//#import "FlipsideViewController.h"
-
 @interface LYTextEditTableCell : UITableViewCell {
 	LYTextMessage *LYText;
 	UITableViewController *delegate;

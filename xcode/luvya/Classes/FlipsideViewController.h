@@ -8,22 +8,37 @@
 
 #import <UIKit/UIKit.h>
 #import "LYTextMessage.h"
-#import "LYTextEditTableCell.h"
+#import "LYEditTableViewController.h"
+
+typedef enum {
+	sortLastUsed,
+	sortFirstUsed,
+	sortNumUses,
+	sortAlpha
+}  LYSortRule ;
 
 @protocol FlipsideViewControllerDelegate;
 
 
-@interface FlipsideViewController : UIViewController {
+@interface FlipsideViewController : UIViewController  <UITableViewDelegate> {
 	id <FlipsideViewControllerDelegate> delegate;
 	bool doShowUserTexts;
-	NSArray *LYTexts;
+	NSMutableArray *LYTexts;
 	uint CurrentLYTextsIndex;
 	LYTextMessage *ActiveText;
+	LYEditTableViewController *textTableViewController;
+	LYSortRule thisRule;
+	bool thisAscending;
+	UISegmentedControl *fsSegmentedControl;
 }
 
 @property (nonatomic, assign) id <FlipsideViewControllerDelegate> delegate;
-@property (nonatomic, retain) NSArray *LYTexts;
+@property (nonatomic, retain) NSMutableArray *LYTexts;
 @property (nonatomic, retain) LYTextMessage *ActiveText;
+@property (nonatomic, retain) IBOutlet LYEditTableViewController *textTableViewController;
+@property (nonatomic, retain) IBOutlet UISegmentedControl *fsSegmentedControl;
+@property LYSortRule thisRule;
+@property BOOL thisAscending;
 
 - (IBAction)done:(id)sender;
 - (IBAction)addUserText:(id)sender;
