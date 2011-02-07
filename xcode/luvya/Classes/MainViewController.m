@@ -14,7 +14,11 @@
 @synthesize ActiveText;
 @synthesize textTableController;
 
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+
+-(void)copyTextArray:(NSMutableArray *)fsArray {
+	LYTexts = [NSMutableArray arrayWithArray:fsArray];
+}
+
 -(void)sortTextArray{
 	
 	NSString *sortKey = [[NSString alloc] init];
@@ -116,7 +120,7 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	self.LYTexts = [[[NSMutableArray alloc] init] retain];
+	LYTexts = [[[NSMutableArray alloc] init] retain];
 
 	[self textArrayFromPlist];
 	[(UITableView *)textTableController.view reloadData];
@@ -124,10 +128,6 @@
 }								  
 								  
 
-- (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller {
-    
-	[self dismissModalViewControllerAnimated:YES];
-}
 
 
 - (IBAction)showInfo:(id)sender {    
@@ -175,7 +175,7 @@
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
-	[LYTexts release];
+	//[LYTexts release];
 }
 
 
@@ -187,6 +187,13 @@
 }
 */
 
+- (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller {
+	LYTexts = [[[NSMutableArray alloc] init] retain];
+
+	[self textArrayFromPlist];
+	[(UITableView *)textTableController.view reloadData];
+	[self dismissModalViewControllerAnimated:YES];
+}
 
 - (void)dealloc {
     [super dealloc];

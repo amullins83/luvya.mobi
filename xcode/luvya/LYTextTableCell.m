@@ -12,7 +12,11 @@
 @implementation LYTextTableCell
 
 @synthesize LYText;
-@synthesize delegate;
+@synthesize lblLastUsed;
+@synthesize lblFirstUsed;
+@synthesize lblUses;
+@synthesize lblText;
+@synthesize btnSend;
 
 
 
@@ -32,7 +36,6 @@
     [super setSelected:selected animated:animated];
     
     // Configure the view for the selected state.
-//	delegate.ActiveText = self.LYText;
 }
 
 

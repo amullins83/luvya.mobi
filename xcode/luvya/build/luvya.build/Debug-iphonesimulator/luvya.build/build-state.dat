@@ -1,7 +1,7 @@
 Tluvya
 v7
 r0
-t318643525.104145
+t318742557.244677
 cCheck dependencies
 cProcessInfoPlistFile /Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app/Info.plist luvya-Info.plist
 cCompileXIB /Users/amullins/Projects/luvya/FlipsideView.xib
@@ -18,6 +18,7 @@ cCpResource build/Debug-iphonesimulator/luvya.app/ButtonBGIActive.png ButtonBGIA
 cCpResource build/Debug-iphonesimulator/luvya.app/GearShape.png GearShape.png
 cCpResource build/Debug-iphonesimulator/luvya.app/GearShapeLighter.png GearShapeLighter.png
 cCpResource build/Debug-iphonesimulator/luvya.app/LYicon.png LYicon.png
+cCpResource build/Debug-iphonesimulator/luvya.app/LYedit.png LYedit.png
 cProcessPCH /var/folders/MD/MD2VtIOxFFqrfhfKWdhg6U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/luvya_Prefix-eqiirpwzihhpzncbpileozxgsghw/luvya_Prefix.pch.gch luvya_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/main.o /Users/amullins/Projects/luvya/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/luvyaAppDelegate.o /Users/amullins/Projects/luvya/Classes/luvyaAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
@@ -103,24 +104,24 @@ t1296761703
 s1802
 
 N/Users/amullins/Projects/luvya/Classes/FlipsideViewController.h
-c000000004D4DCE860000000000000590
-t1296944774
+c000000004D4F32F50000000000000590
+t1297036021
 s1424
 i<UIKit/UIKit.h>
 i"LYTextMessage.h"
 i"LYEditTableViewController.h"
 
 N/Users/amullins/Projects/luvya/Classes/FlipsideViewController.m
-c000000004D4DE515000000000000176C
-t1296950549
-s5996
+c000000004D4F34310000000000001887
+t1297036337
+s6279
 i"FlipsideViewController.h"
-i"Foundation/Foundation.h"
+i"MainViewController.h"
 
 N/Users/amullins/Projects/luvya/Classes/MainViewController.h
-c000000004D4DC0B900000000000003C2
-t1296941241
-s962
+c000000004D4F46300000000000000443
+t1297040944
+s1091
 i"FlipsideViewController.h"
 i"LYTextMessage.h"
 i"MessageUI/MessageUI.h"
@@ -128,9 +129,9 @@ i"LYTextTableCell.h"
 i"LYTableViewController.h"
 
 N/Users/amullins/Projects/luvya/Classes/MainViewController.m
-c000000004D4DE5A30000000000001415
-t1296950691
-s5141
+c000000004D4F5478000000000000149F
+t1297044600
+s5279
 i"MainViewController.h"
 i"LYTextMessage.h"
 
@@ -275,10 +276,15 @@ t1296834054
 s646
 i"LYUserTextEditTableViewController.h"
 
+N/Users/amullins/Projects/luvya/LYedit.png
+c000000004D4F68200000000000000891
+t1297049632
+s2193
+
 N/Users/amullins/Projects/luvya/LYicon.png
-c000000004D4C712D0000000000001871
-t1296855341
-s6257
+c000000004D4F565D000000000000186A
+t1297045085
+s6250
 
 N/Users/amullins/Projects/luvya/LastUsedIconTransparent.png
 c000000004D4AF58100000000000002C3
@@ -286,9 +292,9 @@ t1296758145
 s707
 
 N/Users/amullins/Projects/luvya/MainView.xib
-c000000004D4CD3D0000000000000832C
-t1296880592
-s33580
+c000000004D4F68970000000000008318
+t1297049751
+s33560
 
 N/Users/amullins/Projects/luvya/MainWindow.xib
 c000000004D48B44C0000000000005090
@@ -301,11 +307,11 @@ t2
 s0
 
 N/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app
-t1296950691
-s646
+t1297049756
+s680
 
 N/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app.dSYM
-t1296950691
+t1297044602
 s102
 
 N/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app/AIconTransparent.png
@@ -348,17 +354,21 @@ N/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app/Info.plist
 t1296855433
 s716
 
+N/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app/LYedit.png
+t1297049688
+s2193
+
 N/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app/LYicon.png
-t1296855433
-s6257
+t1297049688
+s6250
 
 N/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app/LastUsedIconTransparent.png
 t1296766348
 s707
 
 N/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app/MainView.nib
-t1296880602
-s3238
+t1297049756
+s3228
 
 N/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app/MainWindow.nib
 t1296670292
@@ -373,19 +383,19 @@ t2
 s0
 
 N/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app/luvya
-t1296950691
-s60944
+t1297044602
+s61076
 
 N/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app/nIconTransparent.png
 t1296766348
 s772
 
 N/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/FlipsideViewController.o
-t1296950552
-s67640
+t1297040944
+s68592
 
 N/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/LYEditTableViewController.o
-t1296944776
+t1297036088
 s48280
 
 N/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/LYTableView.o
@@ -393,7 +403,7 @@ t1296849375
 s37000
 
 N/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/LYTableViewController.o
-t1296944776
+t1297040944
 s44612
 
 N/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/LYTextEditTableCell.o
@@ -417,8 +427,8 @@ t2
 s0
 
 N/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/MainViewController.o
-t1296950691
-s62164
+t1297044602
+s62940
 
 N/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/luvya.LinkFileList
 c000000004D4CC7160000000000000453
@@ -426,7 +436,7 @@ t1296877334
 s1107
 
 N/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/luvyaAppDelegate.o
-t1296944776
+t1297040944
 s51860
 
 N/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/main.o
@@ -479,11 +489,11 @@ s1114
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies318643525#318643525#0(0"0(0#1#0"8633265856#0"0#
+lSLF07#2@18"Check dependencies318742557#318742557#0(0"0(0#1#0"8628840480#0"0#
 
 CCompileC build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/FlipsideViewController.o /Users/amullins/Projects/luvya/Classes/FlipsideViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s318643352.114313
-e318643352.304628
+s318733744.456481
+e318733744.676291
 r1
 xCompileC
 xbuild/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/FlipsideViewController.o
@@ -492,11 +502,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@71"Compile /Users/amullins/Projects/luvya/Classes/FlipsideViewController.m318643352#318643352#0(0"0(0#0#63"/Users/amullins/Projects/luvya/Classes/FlipsideViewController.m8636401024#1830"    cd /Users/amullins/Projects/luvya    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-generated-files.hmap -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-own-target-headers.hmap -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-all-target-headers.hmap -iquote /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-project-headers.hmap -F/Users/amullins/Projects/luvya/build/Debug-iphonesimulator -I/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/include -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/DerivedSources/i386 -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/DerivedSources -include /var/folders/MD/MD2VtIOxFFqrfhfKWdhg6U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/luvya_Prefix-eqiirpwzihhpzncbpileozxgsghw/luvya_Prefix.pch -c /Users/amullins/Projects/luvya/Classes/FlipsideViewController.m -o /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/FlipsideViewController.o0#
+lSLF07#2@71"Compile /Users/amullins/Projects/luvya/Classes/FlipsideViewController.m318733744#318733744#0(0"0(0#0#63"/Users/amullins/Projects/luvya/Classes/FlipsideViewController.m8636904000#1830"    cd /Users/amullins/Projects/luvya    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-generated-files.hmap -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-own-target-headers.hmap -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-all-target-headers.hmap -iquote /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-project-headers.hmap -F/Users/amullins/Projects/luvya/build/Debug-iphonesimulator -I/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/include -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/DerivedSources/i386 -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/DerivedSources -include /var/folders/MD/MD2VtIOxFFqrfhfKWdhg6U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/luvya_Prefix-eqiirpwzihhpzncbpileozxgsghw/luvya_Prefix.pch -c /Users/amullins/Projects/luvya/Classes/FlipsideViewController.m -o /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/FlipsideViewController.o0#
 
 CCompileC build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/LYEditTableViewController.o /Users/amullins/Projects/luvya/LYEditTableViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s318637576.388602
-e318637576.513793
+s318728888.405858
+e318728888.508110
 r1
 xCompileC
 xbuild/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/LYEditTableViewController.o
@@ -507,7 +517,7 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 o/Users/amullins/Projects/luvya/LYEditTableViewController.m: In function '-[LYEditTableViewController tableView:cellForRowAtIndexPath:]':
 o/Users/amullins/Projects/luvya/LYEditTableViewController.m:90: warning: incompatible Objective-C types initializing 'struct UITableViewCell *', expected 'struct LYTextEditTableCell *'
-lSLF07#2@66"Compile /Users/amullins/Projects/luvya/LYEditTableViewController.m318637576#318637576#0(321"/Users/amullins/Projects/luvya/LYEditTableViewController.m: In function '-[LYEditTableViewController tableView:cellForRowAtIndexPath:]':/Users/amullins/Projects/luvya/LYEditTableViewController.m:90: warning: incompatible Objective-C types initializing 'struct UITableViewCell *', expected 'struct LYTextEditTableCell *'1(22@111"Incompatible Objective-C types initializing 'struct UITableViewCell *', expected 'struct LYTextEditTableCell *'318637576#137#184#0(6@58"/Users/amullins/Projects/luvya/LYEditTableViewController.m318634454#90#0#90#0#61"incompatible Objective-C types initializing '*', expected '*'0(0#0#58"/Users/amullins/Projects/luvya/LYEditTableViewController.m8628366624#1828"    cd /Users/amullins/Projects/luvya    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-generated-files.hmap -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-own-target-headers.hmap -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-all-target-headers.hmap -iquote /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-project-headers.hmap -F/Users/amullins/Projects/luvya/build/Debug-iphonesimulator -I/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/include -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/DerivedSources/i386 -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/DerivedSources -include /var/folders/MD/MD2VtIOxFFqrfhfKWdhg6U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/luvya_Prefix-eqiirpwzihhpzncbpileozxgsghw/luvya_Prefix.pch -c /Users/amullins/Projects/luvya/LYEditTableViewController.m -o /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/LYEditTableViewController.o0#
+lSLF07#2@66"Compile /Users/amullins/Projects/luvya/LYEditTableViewController.m318728888#318728888#0(321"/Users/amullins/Projects/luvya/LYEditTableViewController.m: In function '-[LYEditTableViewController tableView:cellForRowAtIndexPath:]':/Users/amullins/Projects/luvya/LYEditTableViewController.m:90: warning: incompatible Objective-C types initializing 'struct UITableViewCell *', expected 'struct LYTextEditTableCell *'1(22@111"Incompatible Objective-C types initializing 'struct UITableViewCell *', expected 'struct LYTextEditTableCell *'318728888#137#184#0(6@58"/Users/amullins/Projects/luvya/LYEditTableViewController.m318634454#90#0#90#0#61"incompatible Objective-C types initializing '*', expected '*'0(0#0#58"/Users/amullins/Projects/luvya/LYEditTableViewController.m8634373600#1828"    cd /Users/amullins/Projects/luvya    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-generated-files.hmap -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-own-target-headers.hmap -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-all-target-headers.hmap -iquote /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-project-headers.hmap -F/Users/amullins/Projects/luvya/build/Debug-iphonesimulator -I/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/include -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/DerivedSources/i386 -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/DerivedSources -include /var/folders/MD/MD2VtIOxFFqrfhfKWdhg6U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/luvya_Prefix-eqiirpwzihhpzncbpileozxgsghw/luvya_Prefix.pch -c /Users/amullins/Projects/luvya/LYEditTableViewController.m -o /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/LYEditTableViewController.o0#
 
 CCompileC build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/LYTableView.o /Users/amullins/Projects/luvya/LYTableView.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s318542174.995254
@@ -526,8 +536,8 @@ o/Users/amullins/Projects/luvya/LYTableView.m:37: warning: method definition for
 lSLF07#2@52"Compile /Users/amullins/Projects/luvya/LYTableView.m318542174#318542175#0(351"/Users/amullins/Projects/luvya/LYTableView.m:37: warning: incomplete implementation of class 'LYTableView'/Users/amullins/Projects/luvya/LYTableView.m:37: warning: method definition for '-dequeueReusableCellWithIdentifier:' not found/Users/amullins/Projects/luvya/LYTableView.m:37: warning: method definition for '-cellForRowAtIndexPath:' not found3(22@48"Incomplete implementation of class 'LYTableView'318542175#0#107#0(6@44"/Users/amullins/Projects/luvya/LYTableView.m318540959#37#0#37#0#38"incomplete implementation of class '*'0(22@69"Method definition for '-dequeueReusableCellWithIdentifier:' not found318542175#107#128#0(6@44"/Users/amullins/Projects/luvya/LYTableView.m318540959#37#0#37#0#35"method definition for '*' not found0(22@57"Method definition for '-cellForRowAtIndexPath:' not found318542175#235#116#0(6@44"/Users/amullins/Projects/luvya/LYTableView.m318540959#37#0#37#0#35"method definition for '*' not found0(0#0#44"/Users/amullins/Projects/luvya/LYTableView.m8633957504#1800"    cd /Users/amullins/Projects/luvya    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-generated-files.hmap -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-own-target-headers.hmap -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-all-target-headers.hmap -iquote /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-project-headers.hmap -F/Users/amullins/Projects/luvya/build/Debug-iphonesimulator -I/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/include -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/DerivedSources/i386 -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/DerivedSources -include /var/folders/MD/MD2VtIOxFFqrfhfKWdhg6U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/luvya_Prefix-eqiirpwzihhpzncbpileozxgsghw/luvya_Prefix.pch -c /Users/amullins/Projects/luvya/LYTableView.m -o /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/LYTableView.o0#
 
 CCompileC build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/LYTableViewController.o /Users/amullins/Projects/luvya/LYTableViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s318637576.335095
-e318637576.454584
+s318733744.511889
+e318733744.639525
 r1
 xCompileC
 xbuild/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/LYTableViewController.o
@@ -538,7 +548,7 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 o/Users/amullins/Projects/luvya/LYTableViewController.m: In function '-[LYTableViewController tableView:cellForRowAtIndexPath:]':
 o/Users/amullins/Projects/luvya/LYTableViewController.m:89: warning: incompatible Objective-C types initializing 'struct UITableViewCell *', expected 'struct LYTextTableCell *'
-lSLF07#2@62"Compile /Users/amullins/Projects/luvya/LYTableViewController.m318637576#318637576#0(305"/Users/amullins/Projects/luvya/LYTableViewController.m: In function '-[LYTableViewController tableView:cellForRowAtIndexPath:]':/Users/amullins/Projects/luvya/LYTableViewController.m:89: warning: incompatible Objective-C types initializing 'struct UITableViewCell *', expected 'struct LYTextTableCell *'1(22@107"Incompatible Objective-C types initializing 'struct UITableViewCell *', expected 'struct LYTextTableCell *'318637576#129#176#0(6@54"/Users/amullins/Projects/luvya/LYTableViewController.m318572644#89#0#89#0#61"incompatible Objective-C types initializing '*', expected '*'0(0#0#54"/Users/amullins/Projects/luvya/LYTableViewController.m8634296128#1820"    cd /Users/amullins/Projects/luvya    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-generated-files.hmap -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-own-target-headers.hmap -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-all-target-headers.hmap -iquote /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-project-headers.hmap -F/Users/amullins/Projects/luvya/build/Debug-iphonesimulator -I/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/include -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/DerivedSources/i386 -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/DerivedSources -include /var/folders/MD/MD2VtIOxFFqrfhfKWdhg6U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/luvya_Prefix-eqiirpwzihhpzncbpileozxgsghw/luvya_Prefix.pch -c /Users/amullins/Projects/luvya/LYTableViewController.m -o /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/LYTableViewController.o0#
+lSLF07#2@62"Compile /Users/amullins/Projects/luvya/LYTableViewController.m318733744#318733744#0(305"/Users/amullins/Projects/luvya/LYTableViewController.m: In function '-[LYTableViewController tableView:cellForRowAtIndexPath:]':/Users/amullins/Projects/luvya/LYTableViewController.m:89: warning: incompatible Objective-C types initializing 'struct UITableViewCell *', expected 'struct LYTextTableCell *'1(22@107"Incompatible Objective-C types initializing 'struct UITableViewCell *', expected 'struct LYTextTableCell *'318733744#129#176#0(6@54"/Users/amullins/Projects/luvya/LYTableViewController.m318572644#89#0#89#0#61"incompatible Objective-C types initializing '*', expected '*'0(0#0#54"/Users/amullins/Projects/luvya/LYTableViewController.m8679929120#1820"    cd /Users/amullins/Projects/luvya    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-generated-files.hmap -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-own-target-headers.hmap -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-all-target-headers.hmap -iquote /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-project-headers.hmap -F/Users/amullins/Projects/luvya/build/Debug-iphonesimulator -I/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/include -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/DerivedSources/i386 -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/DerivedSources -include /var/folders/MD/MD2VtIOxFFqrfhfKWdhg6U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/luvya_Prefix-eqiirpwzihhpzncbpileozxgsghw/luvya_Prefix.pch -c /Users/amullins/Projects/luvya/LYTableViewController.m -o /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/LYTableViewController.o0#
 
 CCompileC build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/LYTextEditTableCell.o /Users/amullins/Projects/luvya/LYTextEditTableCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s318634042.116802
@@ -586,8 +596,8 @@ CCompileC build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i38
 r0
 
 CCompileC build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/MainViewController.o /Users/amullins/Projects/luvya/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s318643491.612961
-e318643491.847648
+s318737401.887606
+e318737402.106589
 r1
 xCompileC
 xbuild/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/MainViewController.o
@@ -596,11 +606,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@67"Compile /Users/amullins/Projects/luvya/Classes/MainViewController.m318643491#318643491#0(0"0(0#0#59"/Users/amullins/Projects/luvya/Classes/MainViewController.m8677265536#1822"    cd /Users/amullins/Projects/luvya    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-generated-files.hmap -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-own-target-headers.hmap -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-all-target-headers.hmap -iquote /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-project-headers.hmap -F/Users/amullins/Projects/luvya/build/Debug-iphonesimulator -I/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/include -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/DerivedSources/i386 -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/DerivedSources -include /var/folders/MD/MD2VtIOxFFqrfhfKWdhg6U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/luvya_Prefix-eqiirpwzihhpzncbpileozxgsghw/luvya_Prefix.pch -c /Users/amullins/Projects/luvya/Classes/MainViewController.m -o /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/MainViewController.o0#
+lSLF07#2@67"Compile /Users/amullins/Projects/luvya/Classes/MainViewController.m318737401#318737402#0(0"0(0#0#59"/Users/amullins/Projects/luvya/Classes/MainViewController.m8597394560#1822"    cd /Users/amullins/Projects/luvya    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-generated-files.hmap -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-own-target-headers.hmap -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-all-target-headers.hmap -iquote /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-project-headers.hmap -F/Users/amullins/Projects/luvya/build/Debug-iphonesimulator -I/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/include -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/DerivedSources/i386 -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/DerivedSources -include /var/folders/MD/MD2VtIOxFFqrfhfKWdhg6U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/luvya_Prefix-eqiirpwzihhpzncbpileozxgsghw/luvya_Prefix.pch -c /Users/amullins/Projects/luvya/Classes/MainViewController.m -o /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/MainViewController.o0#
 
 CCompileC build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/luvyaAppDelegate.o /Users/amullins/Projects/luvya/Classes/luvyaAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s318637576.163441
-e318637576.278412
+s318733744.300123
+e318733744.455842
 r1
 xCompileC
 xbuild/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/luvyaAppDelegate.o
@@ -609,7 +619,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@65"Compile /Users/amullins/Projects/luvya/Classes/luvyaAppDelegate.m318637576#318637576#0(0"0(0#0#57"/Users/amullins/Projects/luvya/Classes/luvyaAppDelegate.m8626736256#1818"    cd /Users/amullins/Projects/luvya    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-generated-files.hmap -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-own-target-headers.hmap -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-all-target-headers.hmap -iquote /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-project-headers.hmap -F/Users/amullins/Projects/luvya/build/Debug-iphonesimulator -I/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/include -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/DerivedSources/i386 -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/DerivedSources -include /var/folders/MD/MD2VtIOxFFqrfhfKWdhg6U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/luvya_Prefix-eqiirpwzihhpzncbpileozxgsghw/luvya_Prefix.pch -c /Users/amullins/Projects/luvya/Classes/luvyaAppDelegate.m -o /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/luvyaAppDelegate.o0#
+lSLF07#2@65"Compile /Users/amullins/Projects/luvya/Classes/luvyaAppDelegate.m318733744#318733744#0(0"0(0#0#57"/Users/amullins/Projects/luvya/Classes/luvyaAppDelegate.m8636147200#1818"    cd /Users/amullins/Projects/luvya    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-generated-files.hmap -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-own-target-headers.hmap -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-all-target-headers.hmap -iquote /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-project-headers.hmap -F/Users/amullins/Projects/luvya/build/Debug-iphonesimulator -I/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/include -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/DerivedSources/i386 -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/DerivedSources -include /var/folders/MD/MD2VtIOxFFqrfhfKWdhg6U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/luvya_Prefix-eqiirpwzihhpzncbpileozxgsghw/luvya_Prefix.pch -c /Users/amullins/Projects/luvya/Classes/luvyaAppDelegate.m -o /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/luvyaAppDelegate.o0#
 
 CCompileC build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/main.o /Users/amullins/Projects/luvya/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s318364393.312776
@@ -636,12 +646,12 @@ x/Users/amullins/Projects/luvya/FlipsideView.xib
 lSLF07#2@27"CompileXIB FlipsideView.xib318637609#318637610#0(0"0(0#0#47"/Users/amullins/Projects/luvya/FlipsideView.xib8633913728#548"    cd /Users/amullins/Projects/luvya    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app/FlipsideView.nib /Users/amullins/Projects/luvya/FlipsideView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
 
 CCompileXIB /Users/amullins/Projects/luvya/MainView.xib
-s318573402.010347
-e318573402.928217
+s318742555.869989
+e318742556.397886
 r1
 xCompileXIB
 x/Users/amullins/Projects/luvya/MainView.xib
-lSLF07#2@23"CompileXIB MainView.xib318573402#318573402#0(0"0(0#0#43"/Users/amullins/Projects/luvya/MainView.xib8633540288#540"    cd /Users/amullins/Projects/luvya    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app/MainView.nib /Users/amullins/Projects/luvya/MainView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+lSLF07#2@23"CompileXIB MainView.xib318742555#318742556#0(0"0(0#0#43"/Users/amullins/Projects/luvya/MainView.xib8629759872#540"    cd /Users/amullins/Projects/luvya    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app/MainView.nib /Users/amullins/Projects/luvya/MainView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
 
 CCompileXIB /Users/amullins/Projects/luvya/MainWindow.xib
 s318363092.455351
@@ -733,14 +743,23 @@ xbuild/Debug-iphonesimulator/luvya.app/GearShapeLighter.png
 xGearShapeLighter.png
 lSLF07#2@25"Copy GearShapeLighter.png318539779#318539780#0(0"0(0#0#51"/Users/amullins/Projects/luvya/GearShapeLighter.png8633368256#452"    cd /Users/amullins/Projects/luvya    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/amullins/Projects/luvya/GearShapeLighter.png /Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app0#
 
+CCpResource build/Debug-iphonesimulator/luvya.app/LYedit.png LYedit.png
+s318742488.152902
+e318742488.510418
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/luvya.app/LYedit.png
+xLYedit.png
+lSLF07#2@15"Copy LYedit.png318742488#318742488#0(0"0(0#0#41"/Users/amullins/Projects/luvya/LYedit.png8632316224#442"    cd /Users/amullins/Projects/luvya    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/amullins/Projects/luvya/LYedit.png /Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app0#
+
 CCpResource build/Debug-iphonesimulator/luvya.app/LYicon.png LYicon.png
-s318548233.068852
-e318548233.096197
+s318742488.151915
+e318742488.510752
 r1
 xCpResource
 xbuild/Debug-iphonesimulator/luvya.app/LYicon.png
 xLYicon.png
-lSLF07#2@15"Copy LYicon.png318548233#318548233#0(0"0(0#0#41"/Users/amullins/Projects/luvya/LYicon.png8628404576#442"    cd /Users/amullins/Projects/luvya    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/amullins/Projects/luvya/LYicon.png /Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app0#
+lSLF07#2@15"Copy LYicon.png318742488#318742488#0(0"0(0#0#41"/Users/amullins/Projects/luvya/LYicon.png8632473280#442"    cd /Users/amullins/Projects/luvya    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/amullins/Projects/luvya/LYicon.png /Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app0#
 
 CCpResource build/Debug-iphonesimulator/luvya.app/LastUsedIconTransparent.png LastUsedIconTransparent.png
 s318459148.638408
@@ -761,23 +780,23 @@ xnIconTransparent.png
 lSLF07#2@25"Copy nIconTransparent.png318459148#318459148#0(0"0(0#0#51"/Users/amullins/Projects/luvya/nIconTransparent.png8626240704#452"    cd /Users/amullins/Projects/luvya    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/amullins/Projects/luvya/nIconTransparent.png /Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app0#
 
 CGenerateDSYMFile /Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app.dSYM /Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app/luvya
-s318643491.884225
-e318643491.917395
+s318737402.143536
+e318737402.176487
 r1
 xGenerateDSYMFile
 x/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app.dSYM
 x/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app/luvya
-lSLF07#2@103"GenerateDSYMFile build/Debug-iphonesimulator/luvya.app.dSYM build/Debug-iphonesimulator/luvya.app/luvya318643491#318643491#0(0"0(0#0#74"/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app/luvya8629890304#353"    cd /Users/amullins/Projects/luvya    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app/luvya -o /Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app.dSYM0#
+lSLF07#2@103"GenerateDSYMFile build/Debug-iphonesimulator/luvya.app.dSYM build/Debug-iphonesimulator/luvya.app/luvya318737402#318737402#0(0"0(0#0#74"/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app/luvya8678954816#353"    cd /Users/amullins/Projects/luvya    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app/luvya -o /Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app.dSYM0#
 
 CLd /Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app/luvya normal i386
-s318643491.847766
-e318643491.884127
+s318737402.106699
+e318737402.143412
 r1
 xLd
 x/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app/luvya
 xnormal
 xi386
-lSLF07#2@79"Link /Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app/luvya318643491#318643491#0(0"0(0#0#0"8677480960#871"    cd /Users/amullins/Projects/luvya    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/amullins/Projects/luvya/build/Debug-iphonesimulator -F/Users/amullins/Projects/luvya/build/Debug-iphonesimulator -filelist /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/luvya.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework MessageUI -o /Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app/luvya0#
+lSLF07#2@79"Link /Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app/luvya318737402#318737402#0(0"0(0#0#0"8679890048#871"    cd /Users/amullins/Projects/luvya    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/amullins/Projects/luvya/build/Debug-iphonesimulator -F/Users/amullins/Projects/luvya/build/Debug-iphonesimulator -filelist /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/Objects-normal/i386/luvya.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework MessageUI -o /Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app/luvya0#
 
 CProcessInfoPlistFile /Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app/Info.plist luvya-Info.plist
 s318548233.064531
@@ -802,10 +821,10 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@27"Precompile luvya_Prefix.pch318363092#318363094#0(0"0(0#0#47"/Users/amullins/Projects/luvya/luvya_Prefix.pch8621966528#1688"    cd /Users/amullins/Projects/luvya    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-generated-files.hmap -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-own-target-headers.hmap -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-all-target-headers.hmap -iquote /Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/luvya-project-headers.hmap -F/Users/amullins/Projects/luvya/build/Debug-iphonesimulator -I/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/include -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/DerivedSources/i386 -I/Users/amullins/Projects/luvya/build/luvya.build/Debug-iphonesimulator/luvya.build/DerivedSources -c /Users/amullins/Projects/luvya/luvya_Prefix.pch -o /var/folders/MD/MD2VtIOxFFqrfhfKWdhg6U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/luvya_Prefix-eqiirpwzihhpzncbpileozxgsghw/luvya_Prefix.pch.gch0#
 
 CTouch /Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app
-s318643491.917491
-e318643491.921809
+s318742556.399076
+e318742556.408451
 r1
 xTouch
 x/Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app
-lSLF07#2@74"Touch /Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app318643491#318643491#0(0"0(0#0#0"8679682880#260"    cd /Users/amullins/Projects/luvya    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app0#
+lSLF07#2@74"Touch /Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app318742556#318742556#0(0"0(0#0#0"8633082560#260"    cd /Users/amullins/Projects/luvya    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/amullins/Projects/luvya/build/Debug-iphonesimulator/luvya.app0#
 

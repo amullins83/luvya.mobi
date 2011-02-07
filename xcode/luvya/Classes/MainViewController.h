@@ -28,9 +28,13 @@
 - (IBAction)sendMessage:(id)sender;
 - (IBAction)setSortOrder:(UISegmentedControl *)sender;
 - (IBAction)toggleAscending:(UIButton *)sender;
+- (void)copyTextArray:(NSMutableArray *)fsArray;
+
+- (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller;
 
 @property (nonatomic, retain) NSMutableArray *LYTexts;
 @property (nonatomic, retain) LYTextMessage *ActiveText;
 @property (nonatomic, retain) IBOutlet LYTableViewController *textTableController;
+
 
 @end

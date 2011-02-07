@@ -7,7 +7,7 @@
 //
 
 #import "FlipsideViewController.h"
-#import "Foundation/Foundation.h";
+#import "MainViewController.h"
 
 @implementation FlipsideViewController
 
@@ -100,7 +100,7 @@
 	thisAscending = [[textDB objectForKey:@"sortAscending"] boolValue];
 	
 	// Sort LYTexts
-	[self sortTextArray];
+	[self sortTextArray];	
 }
 
 - (void)viewDidLoad {
@@ -109,7 +109,7 @@
     
 	self.view.backgroundColor = [UIColor viewFlipsideBackgroundColor];      
 	[self textArrayFromPlist];
-	
+	[(MainViewController *)delegate copyTextArray:LYTexts];	
 	[textTableViewController.view initWithFrame:CGRectMake(0, 44, 320, 325)];
 	
 	[self.view addSubview:textTableViewController.view];
@@ -144,6 +144,7 @@
 	[doShowUT release];
 	
 	[self textArrayFromPlist];
+	[(MainViewController *)delegate copyTextArray:LYTexts];	
 	[(UITableView *)textTableViewController.view reloadData];
 }
 
@@ -157,6 +158,7 @@
 	
 	[textDB writeToFile:filePath atomically:YES];
 	[self textArrayFromPlist];
+	[(MainViewController *)delegate copyTextArray:LYTexts];	
 	[(UITableView *)textTableViewController.view reloadData];
 }
 
@@ -175,6 +177,7 @@
 	[textDB setObject:shorterArray forKey:@"UserTexts"];
 	[textDB writeToFile:filePath atomically:YES];
 	[self textArrayFromPlist];
+	[(MainViewController *)delegate copyTextArray:LYTexts];
 	[(UITableView *)textTableViewController.view reloadData];
 }
 
@@ -190,6 +193,7 @@
 
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
+	[(MainViewController *)delegate copyTextArray:LYTexts];
 	[self.LYTexts release];
 }
 

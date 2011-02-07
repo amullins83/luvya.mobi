@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="34"/>
+			<integer value="36"/>
 			<integer value="56"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
@@ -73,7 +73,7 @@
 						</object>
 						<object class="NSCustomResource" key="IBUINormalImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">GearShapeLighter.png</string>
+							<string key="NSResourceName">LYedit.png</string>
 						</object>
 						<object class="NSCustomResource" key="IBUINormalBackgroundImage" id="821744997">
 							<string key="NSClassName">NSImage</string>
@@ -176,9 +176,9 @@
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
-			<object class="IBUITableViewController" id="362766374">
+			<object class="IBUITableViewController" id="219264334">
 				<bool key="IBUIAutoresizesArchivedViewToFullSize">NO</bool>
-				<object class="IBUITableView" key="IBUIView" id="176323312">
+				<object class="IBUITableView" key="IBUIView" id="604063760">
 					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">292</int>
 					<string key="NSFrame">{{0, 29}, {320, 402}}</string>
@@ -245,23 +245,23 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">delegate</string>
-						<reference key="source" ref="176323312"/>
-						<reference key="destination" ref="362766374"/>
+						<reference key="source" ref="604063760"/>
+						<reference key="destination" ref="219264334"/>
 					</object>
 					<int key="connectionID">58</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">dataSource</string>
-						<reference key="source" ref="176323312"/>
-						<reference key="destination" ref="362766374"/>
+						<reference key="source" ref="604063760"/>
+						<reference key="destination" ref="219264334"/>
 					</object>
 					<int key="connectionID">59</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">delegate</string>
-						<reference key="source" ref="362766374"/>
+						<reference key="source" ref="219264334"/>
 						<reference key="destination" ref="372490531"/>
 					</object>
 					<int key="connectionID">60</int>
@@ -270,7 +270,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">textTableController</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="362766374"/>
+						<reference key="destination" ref="219264334"/>
 					</object>
 					<int key="connectionID">61</int>
 				</object>
@@ -324,18 +324,18 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">56</int>
-						<reference key="object" ref="362766374"/>
+						<reference key="object" ref="219264334"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="176323312"/>
+							<reference ref="604063760"/>
 						</object>
 						<reference key="parent" ref="0"/>
 						<string key="objectName">lyTVC</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">57</int>
-						<reference key="object" ref="176323312"/>
-						<reference key="parent" ref="362766374"/>
+						<reference key="object" ref="604063760"/>
+						<reference key="parent" ref="219264334"/>
 					</object>
 				</object>
 			</object>
@@ -735,7 +735,7 @@
 				<string>ArrowUpTransparent.png</string>
 				<string>ButtonBGInactive.png</string>
 				<string>FirstUsedIconTransparent.png</string>
-				<string>GearShapeLighter.png</string>
+				<string>LYedit.png</string>
 				<string>LastUsedIconTransparent.png</string>
 				<string>nIconTransparent.png</string>
 			</object>
@@ -745,7 +745,7 @@
 				<string>{32, 32}</string>
 				<string>{44, 44}</string>
 				<string>{32, 32}</string>
-				<string>{32, 32}</string>
+				<string>{47, 47}</string>
 				<string>{32, 32}</string>
 				<string>{32, 32}</string>
 			</object>

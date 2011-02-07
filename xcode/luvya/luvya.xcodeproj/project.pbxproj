@@ -25,9 +25,11 @@
 		273E77C212FB3BC900E19B57 /* ButtonBGIActive.png in Resources */ = {isa = PBXBuildFile; fileRef = 273E77C012FB3BC900E19B57 /* ButtonBGIActive.png */; };
 		273E77C612FB4AED00E19B57 /* GearShape.png in Resources */ = {isa = PBXBuildFile; fileRef = 273E77C512FB4AED00E19B57 /* GearShape.png */; };
 		273E798512FC6B8800E19B57 /* GearShapeLighter.png in Resources */ = {isa = PBXBuildFile; fileRef = 273E798412FC6B8800E19B57 /* GearShapeLighter.png */; };
-		273E79C212FCA8DC00E19B57 /* LYicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 273E79C112FCA8DC00E19B57 /* LYicon.png */; };
 		273E79D812FCD9A400E19B57 /* LYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 273E79D712FCD9A400E19B57 /* LYTableViewController.m */; };
 		273E79DB12FCF7D900E19B57 /* LYEditTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 273E79DA12FCF7D900E19B57 /* LYEditTableViewController.m */; };
+		273E7CFF12FF8E0500E19B57 /* LYicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 273E7CFE12FF8E0500E19B57 /* LYicon.png */; };
+		273E7D0412FF9FB300E19B57 /* LYedit.png in Resources */ = {isa = PBXBuildFile; fileRef = 273E7D0312FF9FB300E19B57 /* LYedit.png */; };
+		273E7D1412FFA55C00E19B57 /* MainViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 273E7D1312FFA55C00E19B57 /* MainViewCell.xib */; };
 		280E754D0DD40C5E005A515E /* FlipsideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754A0DD40C5E005A515E /* FlipsideView.xib */; };
 		280E754E0DD40C5E005A515E /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754B0DD40C5E005A515E /* MainView.xib */; };
 		280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754C0DD40C5E005A515E /* MainWindow.xib */; };
@@ -59,11 +61,13 @@
 		273E77C012FB3BC900E19B57 /* ButtonBGIActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonBGIActive.png; sourceTree = "<group>"; };
 		273E77C512FB4AED00E19B57 /* GearShape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GearShape.png; sourceTree = "<group>"; };
 		273E798412FC6B8800E19B57 /* GearShapeLighter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GearShapeLighter.png; sourceTree = "<group>"; };
-		273E79C112FCA8DC00E19B57 /* LYicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LYicon.png; sourceTree = "<group>"; };
 		273E79D612FCD9A400E19B57 /* LYTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYTableViewController.h; sourceTree = "<group>"; };
 		273E79D712FCD9A400E19B57 /* LYTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYTableViewController.m; sourceTree = "<group>"; };
 		273E79D912FCF7D900E19B57 /* LYEditTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYEditTableViewController.h; sourceTree = "<group>"; };
 		273E79DA12FCF7D900E19B57 /* LYEditTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYEditTableViewController.m; sourceTree = "<group>"; };
+		273E7CFE12FF8E0500E19B57 /* LYicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LYicon.png; sourceTree = "<group>"; };
+		273E7D0312FF9FB300E19B57 /* LYedit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LYedit.png; sourceTree = "<group>"; };
+		273E7D1312FFA55C00E19B57 /* MainViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewCell.xib; sourceTree = "<group>"; };
 		280E754A0DD40C5E005A515E /* FlipsideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlipsideView.xib; sourceTree = "<group>"; };
 		280E754B0DD40C5E005A515E /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		280E754C0DD40C5E005A515E /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
@@ -108,6 +112,25 @@
 				1D6058910D05DD3D006BFB54 /* luvya.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		273E7D0012FF9E6500E19B57 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				273E7D0312FF9FB300E19B57 /* LYedit.png */,
+				273E7CFE12FF8E0500E19B57 /* LYicon.png */,
+				273E798412FC6B8800E19B57 /* GearShapeLighter.png */,
+				273E77C512FB4AED00E19B57 /* GearShape.png */,
+				273E77BF12FB3BC900E19B57 /* ButtonBGInactive.png */,
+				273E77C012FB3BC900E19B57 /* ButtonBGIActive.png */,
+				273E77AF12FB358E00E19B57 /* ArrowUpTransparent.png */,
+				273E77B012FB358E00E19B57 /* ArrowDownTransparent.png */,
+				273E77A512FB304000E19B57 /* nIconTransparent.png */,
+				273E77A612FB304000E19B57 /* LastUsedIconTransparent.png */,
+				273E77A712FB304000E19B57 /* FirstUsedIconTransparent.png */,
+				273E77A812FB304000E19B57 /* AIconTransparent.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		281C6CD70DB2D82200F60ACC /* Flipside View */ = {
@@ -164,18 +187,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				273E79C112FCA8DC00E19B57 /* LYicon.png */,
-				273E798412FC6B8800E19B57 /* GearShapeLighter.png */,
-				273E77C512FB4AED00E19B57 /* GearShape.png */,
-				273E77BF12FB3BC900E19B57 /* ButtonBGInactive.png */,
-				273E77C012FB3BC900E19B57 /* ButtonBGIActive.png */,
-				273E77AF12FB358E00E19B57 /* ArrowUpTransparent.png */,
-				273E77B012FB358E00E19B57 /* ArrowDownTransparent.png */,
-				273E77A512FB304000E19B57 /* nIconTransparent.png */,
-				273E77A612FB304000E19B57 /* LastUsedIconTransparent.png */,
-				273E77A712FB304000E19B57 /* FirstUsedIconTransparent.png */,
-				273E77A812FB304000E19B57 /* AIconTransparent.png */,
+				273E7D0012FF9E6500E19B57 /* Images */,
 				280E754A0DD40C5E005A515E /* FlipsideView.xib */,
+				273E7D1312FFA55C00E19B57 /* MainViewCell.xib */,
 				280E754B0DD40C5E005A515E /* MainView.xib */,
 				280E754C0DD40C5E005A515E /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* luvya-Info.plist */,
@@ -260,7 +274,9 @@
 				273E77C212FB3BC900E19B57 /* ButtonBGIActive.png in Resources */,
 				273E77C612FB4AED00E19B57 /* GearShape.png in Resources */,
 				273E798512FC6B8800E19B57 /* GearShapeLighter.png in Resources */,
-				273E79C212FCA8DC00E19B57 /* LYicon.png in Resources */,
+				273E7CFF12FF8E0500E19B57 /* LYicon.png in Resources */,
+				273E7D0412FF9FB300E19B57 /* LYedit.png in Resources */,
+				273E7D1412FFA55C00E19B57 /* MainViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

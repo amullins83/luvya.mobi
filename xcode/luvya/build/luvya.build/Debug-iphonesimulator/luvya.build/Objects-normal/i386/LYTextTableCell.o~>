@@ -1,0 +1,15 @@
+In file included from /Users/amullins/Projects/luvya/LYTextTableCell.m:9:
+/Users/amullins/Projects/luvya/LYTextTableCell.h:13: error: statically allocated instance of Objective-C class 'UIView'
+/Users/amullins/Projects/luvya/LYTextTableCell.h:14: error: statically allocated instance of Objective-C class 'UILabel'
+/Users/amullins/Projects/luvya/LYTextTableCell.h:15: error: statically allocated instance of Objective-C class 'UILabel'
+/Users/amullins/Projects/luvya/LYTextTableCell.h:16: error: statically allocated instance of Objective-C class 'UILabel'
+/Users/amullins/Projects/luvya/LYTextTableCell.h:17: error: statically allocated instance of Objective-C class 'UILabel'
+/Users/amullins/Projects/luvya/LYTextTableCell.h:18: error: statically allocated instance of Objective-C class 'UIButton'
+/Users/amullins/Projects/luvya/LYTextTableCell.m:15: error: type of property 'lblLastUsed' does not match type of ivar 'lblLastUsed'
+/Users/amullins/Projects/luvya/LYTextTableCell.m:16: error: type of property 'lblFirstUsed' does not match type of ivar 'lblFirstUsed'
+/Users/amullins/Projects/luvya/LYTextTableCell.m:17: error: type of property 'lblUses' does not match type of ivar 'lblUses'
+/Users/amullins/Projects/luvya/LYTextTableCell.m:18: error: type of property 'lblText' does not match type of ivar 'lblText'
+/Users/amullins/Projects/luvya/LYTextTableCell.m:19: error: type of property 'btnSend' does not match type of ivar 'btnSend'
+/Users/amullins/Projects/luvya/LYTextTableCell.m: In function '-[LYTextTableCell initWithStyle:reuseIdentifier:]':
+/Users/amullins/Projects/luvya/LYTextTableCell.m:29: error: expected ':' before '}' token
+/Users/amullins/Projects/luvya/LYTextTableCell.m:29: confused by earlier errors, bailing out
